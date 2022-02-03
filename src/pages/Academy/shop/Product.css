@@ -1,0 +1,316 @@
+@media all and (min-width: 1101px) {
+  .productdiv {
+    /* Get Implant/Imeverywhere */
+    background: #ffffff;
+    height: 32vh;
+    /* Get implant shadow */
+    box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+  }
+  .productimg {
+    width: 180px;
+    margin-left: 0;
+    margin-top: 0;
+  }
+  .productdetails {
+    width: 200px;
+
+    margin-left: 20px;
+  }
+
+  .productname {
+    width: 208px;
+    height: 20px;
+
+    /* bold/16 */
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1px;
+    color: #000000;
+  }
+  .productvariant {
+    width: 50px;
+    height: 16px;
+
+    /* black/extralight/12 */
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 12px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+  }
+  .productvariantselect {
+    width: 143px;
+    height: 36px;
+  
+    border: none;
+    /* Get Implant/Imeverywhere */
+    background: #ffffff;
+
+    /* Get implant shadow */
+    box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.25);
+  }
+  .productvariantselect span {
+    width: 159px;
+    height: 20px;
+
+    /* black/extralight/12 */
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 12px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+  }
+  .productoverviewMain {
+    width: 912px;
+    height: 400px;
+
+    /* Get Implant/Imeverywhere */
+    background: #ffffff;
+
+    /* Get implant shadow */
+    box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+  }
+  .productimage {
+    width: 30%;
+    height: 400px;
+    left: 60px;
+    top: 0px;
+  }
+  .productimagessection {
+    width: 10%;
+    height: 400px;
+    left: 60px;
+    top: 0px;
+  }
+  .productoverviewsection {
+    width: 60%;
+    height: 400px;
+    left: 60px;
+    top: 0px;
+  }
+
+  .productmain {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    margin-left: 0px;
+  }
+  .cartcheckoutbtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1px 8px;
+
+    position: absolute;
+    width: 171px;
+    height: 32px;
+    left: 78px;
+    top: 520px;
+
+    /* Get Implant/Read */
+    background: #000000;
+    border-radius: 4px;
+  }
+  .cartcheckoutbtn span {
+    position: static;
+    width: 155px;
+    height: 30px;
+    left: 8px;
+    top: 1px;
+
+    /* bold/20 */
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    /* Get Implant/Imeverywhere */
+    color: #ffffff;
+
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+  }
+  .productimg {
+    width: 180px;
+    height: 200px;
+    margin-bottom: 0px;
+  }
+  .productdetailsprice {
+  
+    top: 85px;
+    left: 0px;
+    width: 95px;
+    height: 12px;
+    margin-bottom:0px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media all and (max-width: 1100px) {
+  .productmain {
+  
+    width: 375px;
+    height: fit-content;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: #ffffff;
+  }
+
+  .productdiv {
+   
+    width: 343px;
+    height: 220px;
+    margin-top: 0;
+
+    /* Get Implant/Imeverywhere */
+    background: #ffffff;
+
+    /* Get implant shadow */
+    box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+  }
+  .productimg {
+   
+    width: 141px;
+    height: 220px;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+
+  .productdetails {
+   
+    width: 222px;
+    height: 150px;
+    left: 141px;
+    margin-top: 20px;
+  }
+  .productname {
+   
+    width: 185px;
+    height: 22px;
+    left: 0px;
+    top: 5px;
+
+    /* bold/10 */
+   
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 15px;
+margin-bottom: 10px;
+    color: #000000;
+  }
+  .productvariant {
+    width: 50px;
+    height: 16px;
+   
+    /* black/extralight/12 */
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 8px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    left: 0px;
+    margin-top: 45px;
+    color: #000000;
+  }
+  .productvariantselect {
+   
+    width: 111px;
+    height: 24px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 8px;
+    line-height: 12px;
+
+    /* Get Implant/Imeverywhere */
+    background: #ffffff;
+    left: 0px;
+   
+    /* Get implant shadow */
+    box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.25);
+    border: none;
+  }
+  .productvariantselect option {
+    
+    width: 131px;
+    height: 12px;
+    left: 154px;
+    top: 64px;
+
+    /* black/extralight/8 */
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 8px;
+    line-height: 12px;
+
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+  }
+  .productdetailsprice {
+  
+    top: 85px;
+    left: 0px;
+    width: 95px;
+    height: 12px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+  }
+  .productexpendeddiv {
+    width: 343px;
+    height: 301px;
+    margin-left: 0px;
+    margin-top: 0px;
+
+    /* Get Implant/Imeverywhere */
+
+    background: #ffffff;
+    /* Get implant shadow */
+
+    box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+  }
+}

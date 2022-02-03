@@ -1,0 +1,43 @@
+.implantItemMain {
+  margin: 2vh 1vw;
+ 
+  display: inline-block;
+  transition: 0.5s cubic-bezier(0.68, -0.1, 0.44, 1.04);
+  -webkit-transition: all 1s cubic-bezier(0.68, -0.1, 0.44, 1.04);
+}
+@media all and (max-width: 600px) {
+  .implantItemMain.inactive {
+    height: 30vh;
+    width: 80vw;
+  }
+  .implantItemMain.active {
+    height: 60vh;
+    width: 80vw;
+  }
+}
+@media all and (min-width: 601px) and (max-width: 1100px) {
+  .implantItemMain.inactive {
+    height: 40vh;
+    width: 50vw;
+  }
+  .implantItemMain.active {
+    height: 60vh;
+    width: 70vw;
+  }
+}
+@media all and (min-width: 1101px) {
+  .implantItemMain.inactive {
+    height: 30vh;
+    width: 30vw;
+  }
+  .implantItemMain.active {
+    height: 60vh;
+    width: 62vw;
+  }
+}
+.implantItemMain.inactive {
+  border-radius: 1vh;
+}
+.implantItemMain.active {
+  border-radius: 2vh;
+}

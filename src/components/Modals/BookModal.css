@@ -1,0 +1,102 @@
+@media all and (max-width: 1000px) {
+    .ModalChild {
+      height: 85vh !important;
+      width: 85% !important;
+      padding-top: 1vh !important;
+    }
+    .ModalContent {
+      flex-direction: column;
+    }
+    .ModalContent > div:first-child {
+      flex: 1;
+      width: 100% !important;
+    }
+    .ModalContent > div:last-child {
+      height: 50vh !important;
+      width: 100% !important;
+    }
+    .ModalChild > h1 {
+      display: none;
+    }
+    .ModalChild > div:nth-child(2) {
+      display: none !important;
+    }
+    .ModalChild > div:first-child button {
+      display: block !important;
+    }
+    .ModalChild > div:nth-child(2) button {
+      display: none !important;
+    }
+    .ModalContent > div:last-child > h2 {
+      font-size: 2.5vh;
+    }
+    .ModalContent > div:last-child > h3 {
+      font-size: 1.8vh;
+      padding-left: 5vw;
+    }
+    .close,
+    .share {
+      --size: 3vh !important;
+    }
+    .absoluteClose {
+      position: absolute !important;
+    }
+    .typesIMG1 {
+      background-image: url("../../assets/Home/singletooth.png") !important;
+    }
+    .typesIMG2 {
+      background-image: url("../../assets/Home/multipleteeth.png") !important;
+    }
+    .typesIMG3 {
+      background-image: url("../../assets/Home/fullmouth.png") !important;
+    }
+    .procedureIMG {
+      background-image: url("../../assets/Home/treatmentMobile.png") !important;
+    }
+  }
+  .Modal {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    display: grid;
+    place-items: center;
+    padding-top: 8vh;
+    animation: blackIn 0.5s forwards ease-in;
+  }
+  @keyframes blackIn {
+    0% {
+      background: rgba(0, 0, 0, 0);
+    }
+    100% {
+      background: rgba(0, 0, 0, 0.3);
+    }
+  }
+  .ModalChild {
+    position: relative;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    width: 80%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15), 0px 0px 5px rgba(0, 0, 0, 0.15);
+    animation: fadeIn 0.5s forwards ease-in;
+  }
+  .ModalChild > div:first-child {
+  
+    width: 100%;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+ 
+  

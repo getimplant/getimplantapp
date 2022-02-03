@@ -1,0 +1,186 @@
+@media all and (max-width: 1000px) {
+  .ModalChild {
+    height: 85vh !important;
+    width: 85% !important;
+    padding-top: 1vh !important;
+  }
+  .ModalContent {
+    flex-direction: column;
+  }
+  .ModalContent > div:first-child {
+    flex: 1;
+    width: 100% !important;
+  }
+  .ModalContent > div:last-child {
+    height: 50vh !important;
+    width: 100% !important;
+  }
+  .ModalChild > h1 {
+    display: none;
+  }
+  .ModalChild > div:nth-child(2) {
+    display: none !important;
+  }
+  .ModalChild > div:first-child button {
+    display: block !important;
+  }
+  .ModalChild > div:nth-child(2) button {
+    display: none !important;
+  }
+  .ModalContent > div:last-child > h2 {
+    font-size: 2.5vh;
+  }
+  .ModalContent > div:last-child > h3 {
+    font-size: 1.8vh;
+    padding-left: 5vw;
+  }
+  .close,
+  .share {
+    --size: 3vh !important;
+  }
+  .absoluteClose {
+    position: absolute !important;
+  }
+  .typesIMG1 {
+    background-image: url("../../assets/Home/singletooth.png") !important;
+  }
+  .typesIMG2 {
+    background-image: url("../../assets/Home/multipleteeth.png") !important;
+  }
+  .typesIMG3 {
+    background-image: url("../../assets/Home/fullmouth.png") !important;
+  }
+  .procedureIMG {
+    background-image: url("../../assets/Home/treatmentMobile.png") !important;
+  }
+}
+.Modal {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  display: grid;
+  place-items: center;
+  padding-top: 8vh;
+  animation: blackIn 0.5s forwards ease-in;
+}
+@keyframes blackIn {
+  0% {
+    background: rgba(0, 0, 0, 0);
+  }
+  100% {
+    background: rgba(0, 0, 0, 0.3);
+  }
+}
+.ModalChild {
+  position: relative;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80vh;
+  width: 80%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15), 0px 0px 5px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 0.5s forwards ease-in;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.ModalChild > div:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 5px;
+  width: 100%;
+}
+.ModalChild > div:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 5px;
+  width: 100%;
+}
+.ModalChild h1 {
+  flex: 1;
+  text-align: center;
+  margin: 0;
+  font: 4vh;
+  line-height: 6vh;
+}
+.ModalChild button {
+  padding: 0 1vh !important;
+  margin-right: 3.5vw;
+  background-color: var(--green-hex);
+  font-size: 2.2vh;
+  height: 4vh;
+  color: white;
+}
+.ModalChild > div:first-child button {
+  display: none;
+}
+.ModalContent {
+  flex: 1;
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+}
+.ModalContent > div:first-child {
+  height: 100%;
+  width: 35%;
+  /* background-color: turquoise; */
+  background-position: 50% 20%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.ModalContent > div:last-child {
+  height: 70vh;
+  width: 75%;
+  padding: 4vw;
+  overflow: scroll;
+}
+.ModalContent > div:last-child > h3 {
+  font-weight: normal;
+}
+.close,
+.share {
+  --size: 4vh;
+  z-index: 5;
+  background-position: center;
+  background-size: cover;
+  height: var(--size);
+  width: var(--size);
+  cursor: pointer;
+}
+.close {
+  background-image: url("../../assets/close.png");
+}
+.share {
+  background-image: url("../../assets/share.png");
+}
+.absoluteClose {
+  position: block;
+}
+
+.implantIMG {
+  background-image: url("../../assets/Home/implantModal.png");
+}
+.typesIMG1 {
+  background-image: url("../../assets/Home/singletooth-notext.png");
+}
+.typesIMG2 {
+  background-image: url("../../assets/Home/multipleteeth-notext.png");
+}
+.typesIMG3 {
+  background-image: url("../../assets/Home/fullmouth-notext.png");
+}
+.procedureIMG {
+  background-image: url("../../assets/Home/treatment.png");
+  background-size: cover !important;
+}

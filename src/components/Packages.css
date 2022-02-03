@@ -1,0 +1,45 @@
+@media all and (max-width: 1000px) {
+  .packagesMain {
+    /* width: 100vw !important; */
+  }
+}
+.packagesMain {
+  color: black;
+  min-height: 70vh;
+  width: 40vh;
+
+  border: 2.5px solid var(--color);
+  border-radius: 8px;
+  /* margin: 0 5vh; */
+  /* padding: 2vh 0; */
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.packagesMain :is(h3, h4, h6) {
+  margin: 0;
+}
+.packagesMain .Content {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  font-weight: 600;
+}
+.packagesMain .Content span {
+  text-align: center;
+}
+.priceTag {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.packagesMain button {
+  color: white;
+  background-color: var(--color);
+}

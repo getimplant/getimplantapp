@@ -1,0 +1,128 @@
+const implants = [
+    {
+      name: "product 1",
+      desc: "the product description goes here",
+      price: 25,
+      image: productimage,
+      productid: 1,
+    },
+    {
+      name: "product 2",
+      desc: "the product description goes here",
+      price: 25,
+      image: productimage,
+      productid: 2,
+    },
+    {
+      name: "product 3",
+      desc: "the product description goes here",
+      price: 25,
+      image: productimage,
+      productid: 3,
+    },
+    {
+      name: "product 4",
+      desc: "the product description goes here",
+      price: 25,
+      image: productimage,
+      productid: 4,
+    },
+    {
+      name: "product 5",
+      desc: "the product description goes here",
+      price: 25,
+      image: productimage,
+      productid: 5,
+    },
+    {
+      name: "product 6",
+      desc: "the product description goes here",
+      price: 25,
+      image: productimage,
+      productid: 6,
+    },
+  ];
+  const memberships = [
+    {
+      name: "Anual Membership -starter",
+
+      price: 1000,
+      productid: 4,
+      image: membership1,
+    },
+    {
+      name: "Anaual Membership- platinum",
+
+      price: 10000,
+      productid: 5,
+      image: membership2,
+    },
+  ];
+  const courses = [
+    {
+      name: "Anual Membership -starter",
+
+      price: 1000,
+      disprice: 600,
+      image: course1,
+      productid: 6,
+    },
+    {
+      name: "Anaual Membership- platinum",
+
+      price: 10000,
+      disprice: 8900,
+      image: course2,
+      productid: 7,
+    },
+  ];
+
+  // {
+  //   type == 'implants'
+  //     ? (products = implants)
+  //     : type == 'membership'
+  //     ? (products = memberships)
+  //     : (products = courses);
+  // }
+
+   <div className='productdiv'>
+              <Paper elevation={3}>
+                <div style={{ display: 'flex', flexDirection: 'row' }}>
+                  <div>
+                    <img className='productimg' src={product.image} />{' '}
+                  </div>
+
+                  <div className='productdetails'>
+                    <span className='productname'>{product.name}</span>
+
+                    <span className='productvariant'>Variants</span>
+                    <form>
+                      <select
+                        name='cars'
+                        id='cars'
+                        className='productvariantselect'
+                      >
+                        <option value='#'>select a variant</option>
+                      </select>
+                    </form>
+                    <br />
+                    <div
+                      style={{ display: 'flex', flexDirection: 'row' }}
+                      className='productdetailsprice'
+                    >
+                      <span style={{ marginRight: '20px' }}>
+                        ${product.price}{' '}
+                      </span>
+                      <IncrDecrButton product={product} />
+                    </div>
+
+                    <Mainbuttons
+                      product={product}
+                      qty={1}
+                      setShow={setShow}
+                      show={show}
+                    />
+                  </div>
+                </div>
+              </Paper>
+            </div>

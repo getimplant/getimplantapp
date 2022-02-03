@@ -1,0 +1,117 @@
+@media all and (max-width: 1000px) {
+  .scrollRight {
+    --yaxisPosition: 300% !important;
+  }
+  .ModalContent3 {
+    flex-direction: column;
+  }
+  .ModalContent3 > div {
+    height: 40vh !important;
+  }
+  .ModalContent3 > div:first-child {
+    width: 80vw !important;
+  }
+  .ModalContent3 > div:last-child {
+    width: 80vw !important;
+  }
+  .ModalContent3 > div:last-child > div > div {
+    width: 80vw !important;
+  }
+  .Denture h2,
+  .DentalBridge h2,
+  .Filling h2 {
+    color: black !important;
+  }
+  .Denture {
+    background-color: var(--yellow-hex);
+  }
+  .DentalBridge {
+    background-color: var(--green-hex);
+  }
+  .Filling {
+    background-color: var(--blue-hex);
+    color: white;
+  }
+  .Filling h2 {
+    color: white !important;
+  }
+  .ModalContent3 h2 {
+    font-size: 3vh !important;
+    margin: 1vh;
+  }
+  .ModalContent3 h3 {
+    font-size: 1.7vh !important;
+  }
+}
+.ModalContent3 {
+  display: flex;
+}
+.ModalContent3 > div {
+  height: 80vh;
+}
+.ModalContent3 > div:first-child {
+  width: 40%;
+  overflow: auto;
+}
+.ModalContent3 > div:last-child {
+  width: 60vw;
+  display: flex;
+  overflow-x: auto;
+}
+
+.ModalContent3 > div:last-child > div {
+  display: flex;
+}
+.ModalContent3 > div:last-child > div > div {
+  width: 26vw;
+  overflow-y: auto;
+}
+.ModalContent3 h2 {
+  font-size: 5vh;
+  text-align: center;
+  font-weight: 800;
+}
+.ModalContent3 h3 {
+  font-size: 2.2vh;
+  font-weight: normal;
+}
+.Denture h2 {
+  color: var(--yellow-hex);
+}
+.DentalBridge h2 {
+  color: var(--green-hex);
+}
+.Filling h2 {
+  color: var(--blue-hex);
+}
+.scrollRight {
+  --yaxisPosition: -50%;
+  background-origin: content-box;
+  padding: 10px;
+  background-image: url("../../assets/right.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 50%;
+  right: 1%;
+  z-index: 15;
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border-radius: 50%;
+  animation: rightLeft 2.5s 2s infinite ease-in-out;
+  transform: translate(50%, var(--yaxisPosition));
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+}
+@keyframes rightLeft {
+  0% {
+    transform: translate(50%, var(--yaxisPosition));
+  }
+  14% {
+    transform: translate(-20%, var(--yaxisPosition));
+  }
+  20% {
+    transform: translate(50%, var(--yaxisPosition));
+  }
+}

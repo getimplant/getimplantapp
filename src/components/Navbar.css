@@ -1,0 +1,166 @@
+@media all and (max-width: 1150px) {
+  .NavbarMain {
+    height: 8vh !important;
+    display: grid !important;
+    grid-template-areas:
+      "logo providers"
+      "all all";
+    position: absolute !important;
+  }
+  .NavbarMain div:first-child {
+    grid-area: logo !important;
+  }
+  .NavbarMain div:nth-child(2) {
+    grid-area: all !important;
+    grid-column: 1 / span 2;
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+  }
+  .NavbarMain div:nth-child(2) span {
+    font-size: calc(0.9vw + 1vh);
+    line-height: calc(0.6vw + 1vh);
+  }
+  .NavbarMain div:nth-child(3) {
+    text-align: right;
+    grid-area: providers !important;
+  }
+  .NavbarMain div:nth-child(4) {
+    display: none !important;
+  }
+  .academynavbarspan{
+    margin-left:20px;color:black;font-size:12px
+  }
+}
+ .academynavbarspan{
+    margin-left:90px;color:black;font-size:12px
+  }
+.NavbarMain {
+  height: 8vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  backdrop-filter: blur(5px);
+
+  /* background-color: rgba(255, 255, 255, 0); */
+
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.NavbarMain img {
+  height: 5vh;
+  margin-top: 1vh;
+}
+.NavbarMain span {
+  margin: 0 1.5vw;
+  color: white;
+  font-weight: bold;
+  font-size: 2.2vh;
+  cursor: pointer;
+}
+
+.NavbarMain div:first-child {
+  padding: 0 1.5vw;
+}
+.NavbarMain div:nth-child(3) {
+  flex: 1;
+  text-align: right;
+}
+.NavbarMain div:nth-child(4) {
+  flex: 1;
+  display: none;
+  padding: 0 2vw;
+}
+.NavbarMain div:nth-child(4) div {
+  height: max-content;
+  width: max-content;
+  font-size: 5vh;
+  cursor: pointer;
+}
+.NavbarMain div:nth-child(4) img {
+  height: 3vh;
+  width: 3vh;
+}
+
+.Navmenu {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 21;
+  background-color: rgba(255, 255, 255, 1);
+  transform: translateX(100%);
+  transition: 0.35s cubic-bezier(0.33, -0.05, 0.68, 1.5);
+  overflow: hidden;
+
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.MenuOpen {
+  transform: translateX(15%);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1), -20px 0 30px rgba(0, 0, 0, 0.15),
+    -3px 0 5px rgba(0, 0, 0, 0.1);
+}
+.Navmenu > div:first-child img {
+  height: 5vh;
+  width: 5vh;
+}
+.Navmenu > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding-top: 5vh;
+  height: 50vh;
+}
+.Navmenu .NavmenuLinks {
+  height: 7.5vh;
+  width: 100%;
+  /* background-color: rgb(201, 201, 201); */
+  color: black;
+  font-size: 3vh;
+  font-weight: bold;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 15%;
+}
+
+.Navmenu .NavmenuLinks img {
+  height: 3.5vh;
+  width: 3.5vh;
+  margin: 0 2vw;
+}
+
+.Navmenu .home:hover {
+  background-color: var(--peach-hex);
+}
+.Navmenu .club:hover {
+  background-color: var(--green-hex);
+}
+.Navmenu .aca:hover {
+  background-color: var(--yellow-hex);
+}
+.Navmenu .shop:hover {
+  background-color: var(--pink-hex);
+}
+.Navmenu .mark:hover {
+  background-color: var(--pink-hex);
+}
+.Navmenu .cont:hover {
+  background-color: var(--sky-hex);
+}
+.Navmenu > div:last-child {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 10vh;
+}

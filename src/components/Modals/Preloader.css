@@ -1,0 +1,116 @@
+.PreloaderMain {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  display: grid;
+  place-items: center;
+  padding-top: 8vh;
+  animation: PreloaderMainblackIn 0.5s forwards ease-in;
+}
+@keyframes PreloaderMainblackIn {
+  0% {
+    background: rgba(0, 0, 0, 0);
+  }
+  100% {
+    background: rgba(0, 0, 0, 0.3);
+  }
+}
+@media all and (max-width: 1000px) {
+  .PreloaderChild > button {
+    transform: scale(1) !important;
+  }
+  .PreloaderChild > h1 {
+    width: 100% !important;
+    margin: 0 !important;
+    font-size: 3.5vh !important;
+  }
+  .PreloaderChild > h5 {
+    width: 90% !important;
+    font-weight: normal !important;
+    font-size: 0.9em !important;
+  }
+  .PreloaderChild > section {
+    margin: 4vh 0 5vh;
+  }
+  .PreloaderChild > section > span {
+    font-size: 2vh !important;
+  }
+}
+@media all and (max-width: 600px) {
+  .PreloaderChild {
+    background-image: url('../../assets/preloaderMobile.jpg') !important;
+  }
+}
+.PreloaderChild {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 80vh;
+  width: 80%;
+  max-width: 110vh;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15), 0px 0px 5px rgba(0, 0, 0, 0.15);
+  animation: PreloaderChildfadeIn 0.5s forwards ease-in;
+  padding: 0 0 0 4vw;
+
+  background-image: url('../../assets/preloader.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.PreloaderChild > div {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.5vh;
+}
+.preloaderClose {
+  height: calc(4vh + 1vw);
+  cursor: pointer;
+  border-radius: 50%;
+}
+.preloaderCall {
+  height: 3.5vh;
+}
+.PreloaderChild > h1 {
+  width: 90%;
+  font-size: calc(2vh + 2.6vw);
+  margin: 0 0 1vh;
+}
+.PreloaderChild > h5 {
+  font-size: 1em;
+  font-weight: 500;
+  width: 35%;
+  margin: 0;
+}
+.PreloaderChild > button {
+  margin: 8vh 0;
+  transform-origin: left;
+  transform: scale(1.4);
+  background-color: var(--green-hex);
+  color: white;
+}
+.PreloaderChild > section {
+  display: flex;
+  align-items: center;
+  padding: 2vh 1vw;
+  border-radius: 2vh;
+}
+.PreloaderChild > section > span {
+  font-size: 2.5vh;
+  font-weight: bolder;
+  padding: 0 1vh;
+}

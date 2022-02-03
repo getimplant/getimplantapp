@@ -1,0 +1,928 @@
+@media all and (min-width: 1100px) {
+  .academyMain {
+    background-image: url(../../assets/academybg.png);
+    position: absolute;
+    width: 1024px;
+    height: 768px;
+    left: 0px;
+    top: 0px;
+  }
+  .singuppage {
+    background-image: url(../../assets/singupbg.png);
+    position: absolute;
+    width: 1024px;
+    height: 768px;
+    left: 0px;
+    top: 0px;
+  }
+  .academyshopMain {
+    width: 100%;
+    padding: 10vh 5vw 0 5vw;
+    background-color: rgb(250, 250, 250);
+    background-size: cover;
+    background-position: center;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+  .signbuttontext {
+    position: static;
+    width: auto;
+    height: 30px;
+    left: 8px;
+    top: 1px;
+
+    /* bold/20 */
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    /* Get Implant/Imeverywhere */
+    color: #ffffff;
+
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+  }
+  .productimg {
+    min-width: 100px;
+    height: 70px;
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  .productdetails {
+    min-width: 100px;
+    height: 200px;
+    width: 200px;
+    margin-top: 20px;
+  }
+  .logindiv {
+    position: absolute;
+    width: 387px;
+    height: 500px;
+    left: 889px;
+    top: 161px;
+
+    /* Get Implant/Imeverywhere */
+    background: #ffffff;
+
+    /* Get implant shadow */
+    box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+  }
+  .loginbutton {
+    /* Auto Layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1px 0px;
+    position: absolute;
+    width: auto;
+    height: 32px;
+    left: 120px;
+    top: 350px;
+
+    /* Get Implant/Read */
+    background: #000000;
+    border-radius: 6px;
+  }
+  .signbutton {
+    /* Auto Layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1px 0px;
+    position: absolute;
+    width: auto;
+    height: 32px;
+    left: 120px;
+    top: 350px;
+
+    /* Get Implant/Read */
+    background: #000000;
+    border-radius: 6px;
+  }
+  .loginbuttontext {
+    position: static;
+    width: auto;
+    height: 30px;
+    left: 8px;
+    top: 1px;
+
+    /* bold/20 */
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    /* Get Implant/Imeverywhere */
+    color: #ffffff;
+
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+  }
+  .productsdiv {
+    width: 100%;
+    margin-left: 0px;
+    min-height: 400px;
+    height: auto;
+  }
+  .productdiv {
+    margin-top: 0px;
+    margin-left: 0px;
+    width: "400px";
+  }
+
+  .academycontentMain {
+    background-image: "white";
+    margin-top: 80px;
+    margin-left: 35px;
+    overflow-y: hidden;
+  }
+  .card {
+    align-self: center;
+  }
+  .profilecontent {
+    min-height: 80vh;
+    width: 100%;
+    padding: 2vh 5vw 0 2vw;
+    min-width: none;
+    background-position: center;
+    margin-left: "0px";
+
+    display: flex;
+    flex-direction: row;
+  }
+  .ordermaindiv {
+    width: 80%;
+    max-width: 400px;
+  }
+  .ordercontent {
+    width: 100%;
+    padding: 2vh 5vw 0 2vw;
+    min-width: none;
+    background-position: center;
+    margin-left: 0px;
+
+    display: flex;
+    flex-direction: row;
+  }
+  .orderimg {
+    width: 40%;
+    height: 200px;
+  }
+  .orderdetails {
+    width: 60%;
+    height: 200px;
+    text-align: right;
+  }
+  .calenderdiv {
+    position: absolute;
+    width: 348px;
+    height: 333px;
+    left: 35px;
+    top: 180px;
+
+    /* Get Implant/Imeverywhere */
+    background: #ffffff;
+
+    /* Get implant shadow */
+    box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+  }
+
+  .datescheduleform {
+    position: absolute;
+    width: 617px;
+    height: 426px;
+    left: 589px;
+    top: 180px;
+
+    /* Get Implant/Imeverywhere */
+    background: #ffffff;
+
+    /* Get implant shadow */
+    box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+  }
+  .datescheduleform button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1px 2px;
+
+    position: absolute;
+    width: 105px;
+    height: 32px;
+    left: 503px;
+    top: 379px;
+
+    /* Get Implant/sky */
+    background: #3159a7;
+    border-radius: 6px;
+  }
+
+  .datescheduleform button span {
+    position: static;
+    width: 98px;
+    height: 30px;
+    left: 0.5px;
+    top: 1px;
+
+    /* bold/20 */
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 30px;
+
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    /* Get Implant/Imeverywhere */
+    color: #ffffff;
+
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 0px;
+  }
+  .datescheduletitle {
+    margin-left: 35%;
+  }
+
+  /* shop */
+  .shopcontentdiv {
+    width: 78%;
+    height: 600px;
+  }
+  .cartdivmain {
+    position: fixed;
+    width: 320px;
+    height: fit-content;
+  }
+
+  /* membership */
+  .membershipdiv {
+    position: relative;
+    margin-top: 40px;
+    margin-left: 20px;
+    height: 100vh;
+  }
+  .membershipimg {
+    min-width: 100px;
+    height: 250px;
+    width: 400px;
+  }
+  .membershipdetails {
+    margin-left: 20px;
+    height: 120px;
+    width: 100%;
+  }
+  /* courses */
+  .coursediv {
+    margin-top: 40px;
+    margin-left: 20px;
+    height: 80vh;
+  }
+  .courseimg {
+    min-width: 100px;
+    height: 250px;
+    width: 450px;
+    margin-top: 0px;
+  }
+
+  .coursedetails {
+    margin-left: 20px;
+    height: 80px;
+    width: 400px;
+    position: relative;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .coursedetails span {
+    margin-right: 50px;
+  }
+  .digonalpassthrough {
+    position: absolute;
+    width: 109px;
+    height: 33.5px;
+    left: -10px;
+    top: 24.5px;
+
+    /* Get Implant/Read */
+  }
+  /* cart */
+  .cartheader {
+    height: 50px;
+    width: 100%;
+  }
+  .cartbody {
+    height: 400px;
+    width: 100%;
+    overflow-y: scroll;
+  }
+  .cartfooter {
+    height: 20px;
+    width: 100%;
+  }
+  .beamembercontentdiv {
+    position: absolute;
+    height: 720px;
+  }
+  .beamemberMain {
+    background-image: url(../../assets/beamemberbg.png);
+    position: relative;
+    width: 1024px;
+    height: 704px;
+    left: 0px;
+    top: 64px;
+  }
+  .beamemberMain div {
+    position: absolute;
+    width: 387px;
+    height: 500px;
+    left: 889px;
+    top: 95px;
+    background: #ffffff;
+
+    /* Get implant shadow */
+    box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+  }
+  .beamemberMainh3 {
+    width: 250px;
+    height: 18px;
+    margin-left: 86px;
+    margin-top: 30px;
+
+    /* bold/12 */
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+  }
+  .beamemberMainbutton {
+    justify-content: center;
+    align-items: center;
+    padding: 1px 8px;
+
+    position: relative;
+    width: 84px;
+    height: 32px;
+    left: 141px;
+    top: 390px;
+    bottom: 0px;
+    /* Get Implant/Read */
+    background-color: black;
+    border-radius: 6px;
+  }
+  .beamemberMainbuttontext {
+    width: 194px;
+    height: 18px;
+    left: 986px;
+    top: 0px;
+
+    /* bold/12 */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+
+    /* identical to box height */
+
+    color: white;
+  }
+  .flexcontent {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+  }
+  .shopcontentproducts {
+    max-width: 950px;
+  }
+}
+
+/* mobile */
+
+@media all and (max-width: 1100px) {
+  /* For desktop: */
+
+  .singuppage {
+    background-image: url(../../assets/singupbg.png);
+    position: absolute;
+    height: 100vh;
+  }
+  .beamemberMain {
+    background-image: url(../../assets/beamembermobile.png);
+    position: relative;
+    width: 663px;
+    height: 802px;
+    left: 0px;
+    top: 0px;
+    background-repeat: no-repeat;
+  }
+  .beamemberMainh3 {
+    width: 250px;
+    height: 18px;
+    margin-left: 60px;
+    margin-top: 40px;
+    position: absolute;
+    /* bold/12 */
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+  }
+
+  .beamemberMain div {
+    position: absolute;
+    width: 343px;
+    height: 419px;
+    left: 10px;
+    top: 376px;
+
+    /* Get Implant/Imeverywhere */
+    background: #ffffff;
+
+    /* Get implant shadow */
+    box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+  }
+
+  .beamemberMainbutton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1px 8px;
+
+    position: absolute;
+    width: 84px;
+    height: 32px;
+    left: 131px;
+    top: 325px;
+
+    /* Get Implant/Read */
+    background: #000000;
+    border-radius: 6px;
+  }
+  .beamemberMainbuttontext {
+    width: 194px;
+    height: 18px;
+    margin-left: 10px;
+    margin-top: 0px;
+
+    /* bold/12 */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: white;
+  }
+  .academyMain {
+    background-image: url(../../assets/academybgmobile.png);
+    min-height: 100vh;
+    width: 100%;
+    padding: 10vh 5vw 0 5vw;
+    background-color: rgb(250, 250, 250);
+    background-size: cover;
+    background-position: center;
+    margin-top: 0px;
+    display: flex;
+
+    overflow-y: hidden;
+    flex-direction: column;
+  }
+  .academyshopMain {
+    min-height: 100vh;
+    width: 100%;
+    padding: 10vh 5vw 0 5vw;
+    background-color: rgb(250, 250, 250);
+    background-size: cover;
+    background-position: center;
+    margin-top: 0px;
+  }
+  .logindiv {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 550px;
+
+    margin-top: 70%;
+    margin-bottom: 20px;
+  }
+  .signbuttontext {
+    position: static;
+    width: auto;
+    height: 30px;
+    left: 8px;
+    top: 1px;
+
+    /* bold/20 */
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    /* Get Implant/Imeverywhere */
+    color: #ffffff;
+
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+  }
+  .academycontentMain {
+    background-image: "white";
+    margin-top: 120px;
+    margin-left: 35px;
+    overflow-y: hidden;
+  }
+  .card {
+    align-self: center;
+  }
+  .profilecontent {
+    margin-bottom: 40px;
+    min-height: 80vh;
+    width: 100%;
+    padding: 2vh 5vw 0 2vw;
+    min-width: none;
+    background-position: center;
+    margin-left: 0px;
+  }
+  .ordermaindiv {
+    width: 80%;
+  }
+  .ordercontent {
+    width: 100%;
+    padding: 2vh 5vw 0 2vw;
+    min-width: none;
+    background-position: center;
+    margin-left: 0px;
+    margin-bottom: 20px;
+  }
+  .orderimg {
+    width: 100%;
+    height: 150px;
+  }
+  .orderdetails {
+    width: 100%;
+    height: 200px;
+    text-align: right;
+  }
+  .productsdiv {
+    position: absolute;
+    top: 1020px;
+    width: 80%;
+    margin-left: 0px;
+    min-height: 400px;
+    height: auto;
+  }
+  .productdiv {
+    margin-top: 40px;
+    margin-left: 0px;
+
+    height: 30vh;
+
+    width: 323px !important;
+  }
+  .productimg {
+    width: 141px;
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 220px;
+  }
+  .productdetails {
+    width: 202px;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  .calenderdiv {
+    position: absolute;
+    width: 309px;
+    height: 259px;
+    left: 35px;
+    top: 230px;
+
+    /* Get Implant/Imeverywhere */
+    background: #ffffff;
+
+    /* Get implant shadow */
+    box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+  }
+
+  .datescheduleform {
+    position: absolute;
+    width: 351px;
+    height: 381px;
+    left: 16px;
+    top: 587px;
+
+    /* Get Implant/Imeverywhere */
+    background: #ffffff;
+
+    /* Get implant shadow */
+    box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.25);
+  }
+  .datescheduleform button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1px 2px;
+
+    position: absolute;
+    width: 105px;
+    height: 32px;
+    left: 60%;
+    top: 340px;
+
+    /* Get Implant/sky */
+    background: #3159a7;
+    border-radius: 6px;
+  }
+
+  .datescheduleform button span {
+    position: static;
+    width: 98px;
+    height: 30px;
+    left: 0.5px;
+    top: 1px;
+
+    /* bold/20 */
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 30px;
+
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    /* Get Implant/Imeverywhere */
+    color: #ffffff;
+
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 0px;
+  }
+  .datescheduletitle {
+    text-align: center;
+    margin: 30%;
+  }
+  .signbutton {
+    /* Auto Layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1px 0px;
+    position: absolute;
+    width: auto;
+    height: 32px;
+    left: 120px;
+    top: 600px;
+
+    /* Get Implant/Read */
+    background: #000000;
+    border-radius: 6px;
+  }
+
+  .loginbutton {
+    /* Auto Layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1px 0px;
+    position: absolute;
+    width: auto;
+    height: 32px;
+    left: 120px;
+    top: 350px;
+
+    /* Get Implant/Read */
+    background: #000000;
+    border-radius: 6px;
+  }
+  .loginbuttontext {
+    position: static;
+    width: auto;
+    height: 30px;
+    left: 8px;
+    top: 1px;
+
+    /* bold/20 */
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    /* Get Implant/Imeverywhere */
+    color: #ffffff;
+
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+  }
+
+  /* membership */
+  .membershipdiv {
+    position: relative;
+    width: 343px;
+    height: 330px;
+    left: 0px;
+    top: 10px;
+
+    /* Get Implant/Imeverywhere */
+    background: #ffffff;
+
+    /* Get implant shadow */
+    box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+  }
+  .membershipimg {
+    position: absolute;
+    width: 343px;
+    height: 202px;
+    left: 0px;
+    top: 0px;
+  }
+  .membershipdetails {
+    position: absolute;
+    width: 343px;
+    height: 130px;
+    left: 20px;
+    top: 220px;
+  }
+  .membershipmainbutton {
+    width: 343px;
+    height: 120px;
+
+    margin-top: 15px;
+  }
+  /* courses */
+  .coursediv {
+    position: relative;
+    width: 323px;
+    height: 320px;
+    left: 0px;
+    top: 10px;
+
+    /* Get Implant/Imeverywhere */
+    background: #ffffff;
+
+    /* Get implant shadow */
+    box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+  }
+  .coursemainbuttons{
+    width: 343px;
+    height: 120px;
+
+    margin-top: 85px;
+  }
+  .courseimg {
+   
+    min-width: 100px;
+    height: 100%;
+    width: 100%;
+  }
+
+  .coursedetails {
+   
+    margin-left: 20px;
+    top: 202px;
+    height: 120px;
+    width: 323px;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .coursedetails span {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    margin-right: 20px;
+    /* Get Implant/Read */
+    color: #000000;
+  }
+  .cartdivmain {
+    position: fixed;
+    width: 320px;
+  }
+  .cartheader {
+    height: 50px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .cartbody {
+    height: 400px;
+    width: 100%;
+    overflow-y: scroll;
+    margin-bottom: 20px;
+  }
+  .cartfooter {
+    height: 20px;
+    width: 100%;
+  }
+
+  .shopcontentdiv {
+    width: 78%;
+    height: 700px;
+  }
+  .flexcontent {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+  }
+  .digonalpassthrough {
+  
+    width: 60px;
+    height: 25.5px;
+    margin-left: -33px;
+    top: 35.5px;
+
+    /* Get Implant/Read */
+  }
+  /* .shopcontentproducts{
+    min-width: 1000px;
+  } */
+  .cartflexcontent {
+    display: flex;
+    flex-direction: row;
+  }
+}

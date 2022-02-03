@@ -1,0 +1,166 @@
+@media all and (max-width: 1000px) {
+  .ModalChild2 > h1 {
+    display: none;
+  }
+  .ModalContent2 {
+    flex-direction: column;
+  }
+  .ModalContent2 > div:first-child {
+    height: 30vh !important;
+    width: 100% !important;
+  }
+  .ModalContent2 > div:last-child {
+    height: 50vh !important;
+    width: 100% !important;
+  }
+  .ModalContent2 h2 {
+    margin: 0;
+    font-size: 2.2vh;
+  }
+  .ModalContent2 h3 {
+    font-size: 1.6vh;
+    line-height: 2.2vh;
+  }
+  .awarenessIMG1 {
+    background-image: url("../../assets/Home/awareness1Mobile.png") !important;
+  }
+  .awarenessIMG2 {
+    background-image: url("../../assets/Home/awareness2.png") !important;
+  }
+  .awarenessIMG3 {
+    background-image: url("../../assets/Home/awareness3.png") !important;
+  }
+  .awarenessIMG4 {
+    background-image: url("../../assets/Home/awareness4.png") !important;
+    background-size: contain !important;
+  }
+  .imgPositionChnage {
+    background-position: 50% 80% !important;
+  }
+}
+.Modal2 {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  display: grid;
+  place-items: center;
+  padding-top: 8vh;
+  animation: blackIn2 0.5s forwards ease-in;
+}
+@keyframes blackIn2 {
+  0% {
+    background: rgba(0, 0, 0, 0);
+  }
+  100% {
+    background: rgba(0, 0, 0, 0.3);
+  }
+}
+.ModalChild2 {
+  position: relative;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80vh;
+  width: 80%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15), 0px 0px 5px rgba(0, 0, 0, 0.15);
+  animation: fadeIn2 0.5s forwards ease-in;
+}
+@keyframes fadeIn2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.ModalChild2 > div:first-child {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 5px;
+  width: 100%;
+}
+.ModalChild2 > h1 {
+  margin: 2vh;
+  font-size: 3.5vh;
+}
+.ModalContent2 {
+  flex: 1;
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+}
+.ModalContent2 > div:first-child {
+  height: 80vh;
+  width: 35%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.ModalContent2 > div:last-child {
+  height: 80vh;
+  width: 75%;
+  padding: 2vh 2vw 4vw;
+  overflow: scroll;
+}
+.ModalContent2 > div:last-child > h3 {
+  font-weight: normal;
+  margin-left: 2vw !important;
+}
+
+.livesIMG1 {
+  /* animation: visiblein 0.5s forwards; */
+  background-image: url("../../assets/Home/person1.png");
+}
+.livesIMG1B {
+  animation: visiblein 0.7s forwards;
+  background-image: url("../../assets/Home/person1B.png");
+}
+.livesIMG2 {
+  background-image: url("../../assets/Home/person2.png");
+}
+.livesIMG2B {
+  animation: visiblein 0.7s forwards;
+  /* animation: visiblein 0.5s forwards; */
+  background-image: url("../../assets/Home/person2B.png");
+}
+.livesIMG3 {
+  background-image: url("../../assets/Home/person3.png");
+}
+.livesIMG3B {
+  animation: visiblein 0.7s forwards;
+  background-image: url("../../assets/Home/person3B.png");
+}
+.livesIMG4 {
+  background-image: url("../../assets/Home/person4.png");
+}
+.livesIMG4B {
+  animation: visiblein 0.7s forwards;
+  background-image: url("../../assets/Home/person4B.png");
+}
+@keyframes visiblein {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.awarenessIMG1 {
+  background-image: url("../../assets/Home/awareness1.png");
+}
+.awarenessIMG2 {
+  background-image: url("../../assets/Home/awareness2.png");
+}
+.awarenessIMG3 {
+  background-image: url("../../assets/Home/awareness3.png");
+}
+.awarenessIMG4 {
+  background-image: url("../../assets/Home/awareness4.png");
+}

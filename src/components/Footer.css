@@ -1,0 +1,103 @@
+@media all and (max-width: 1150px) {
+  .footerLinks {
+    display: grid !important;
+    grid-template-areas:
+      "image image"
+      "group1 group2";
+    justify-content: center !important;
+  }
+  .footerLinks > div {
+    width: 45vw !important;
+    margin-top: 2vh;
+    padding-left: 10%;
+  }
+  .footerSmile a {
+    font-size: 1.4vh !important;
+  }
+  .footerLinks > div:first-child {
+    width: 100% !important;
+    height: 5vh !important;
+    grid-area: image;
+  }
+  .footerLinks > div:last-child {
+    align-items: flex-start !important;
+    font-size: 2vh !important;
+  }
+  .footerSmile {
+    text-align: center;
+    flex: none !important;
+    height: 10vh;
+    margin-top: 2vh;
+  }
+}
+
+.footerMain {
+  width: 100%;
+  min-height: 45vh;
+  background-color: black;
+  color: white;
+  overflow: hidden;
+
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-direction: column;
+
+  padding: 3vw;
+  padding-bottom: 0;
+  cursor: default;
+}
+.footerLinks > div:first-child {
+  background-image: url("../assets/LOGO.png");
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+.footerLinks {
+  flex: 2;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+.footerLinks > * {
+  /* background-color: rgb(73, 73, 73); */
+  width: 20%;
+  font-size: 2vh;
+  font-weight: 600;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding-left: 2vw;
+}
+.footerLinks > div:first-child {
+  width: 17%;
+}
+.footerLinks > div:last-child {
+  width: 10%;
+  /* align-items: flex-end; */
+  font-size: 2.5vh;
+  font-weight: bold;
+}
+.footerLINK {
+  color: white;
+  text-decoration: none;
+}
+
+.footerSmile {
+  background-image: url("../assets/footerSmile.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex: 0.65;
+}
+.footerSmile a {
+  color: white;
+  text-decoration: none;
+  font-size: 2vh;
+}
+.footerSmile img {
+  height: 100%;
+  width: max-content;
+}

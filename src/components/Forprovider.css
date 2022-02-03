@@ -1,0 +1,119 @@
+@media all and (max-width: 1000px) {
+  .providerMain {
+    flex-direction: column;
+  }
+  .providerLogo {
+    width: calc(10vh + 10vw) !important;
+  }
+  .providerBars {
+    transform: translate(100%, 0);
+    animation: slidedown 0.5s ease-in forwards;
+  }
+  .providerBars:first-child:hover {
+    background-image: url('../assets/providerMobile1.png') !important;
+  }
+  .providerBars:nth-child(2):hover {
+    background-image: url('../assets/providerMobile2.png') !important;
+  }
+  .providerBars:nth-child(3):hover {
+    background-image: url('../assets/providerMobile3.png') !important;
+  }
+  .providerBars:nth-child(4):hover {
+    background-image: url('../assets/providerMobile4.png') !important;
+  }
+  .providerBars:last-child:hover {
+    background-image: url('../assets/providerMobile5.png') !important;
+  }
+}
+@media all and (min-width: 1001px) {
+  .providerBars {
+    transform: translate(0, -100%);
+    animation: slidedown 0.5s ease-out forwards;
+  }
+}
+.providerMain {
+  height: 100vh;
+  width: 100%;
+  /* background-color: #fff; */
+  position: fixed;
+  top: 0;
+  z-index: 22;
+
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+.providerLogo {
+  position: absolute;
+  top: 2vh;
+  left: 2vh;
+  z-index: 23;
+  width: 12vw;
+}
+.providerBars {
+  --middle: 0s;
+  --2nd-middle: 0.25s;
+  --last: 0.4s;
+  flex: 1;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+.providerBars:first-child {
+  background-color: var(--green-hex);
+  animation-delay: var(--last);
+}
+.providerBars:first-child:hover {
+  background-image: url('../assets/provider1.png');
+}
+.providerBars:nth-child(2) {
+  background-color: var(--yellow-hex);
+  animation-delay: var(--2nd-middle);
+}
+.providerBars:nth-child(2):hover {
+  background-image: url('../assets/provider2.png');
+}
+.providerBars:nth-child(3) {
+  background-color: var(--plum-hex);
+  animation-delay: var(--middle);
+}
+.providerBars:nth-child(3):hover {
+  background-image: url('../assets/provider3.png');
+}
+.providerBars:nth-child(3):hover h2 {
+  color: black;
+}
+.providerBars:nth-child(4) {
+  background-color: var(--blue-hex);
+  animation-delay: var(--2nd-middle);
+}
+.providerBars:nth-child(4):hover {
+  background-image: url('../assets/provider4.png');
+}
+.providerBars:nth-child(4):hover h2 {
+  color: black;
+}
+.providerBars:last-child {
+  background-color: var(--peach-hex);
+  animation-delay: var(--last);
+}
+.providerBars:last-child:hover {
+  background-image: url('../assets/provider5.png');
+}
+@keyframes slidedown {
+  100% {
+    transform: translate(0, 0);
+  }
+}
+.providerBars h2 {
+  font-size: calc(2vh + 2vw);
+  color: white;
+}

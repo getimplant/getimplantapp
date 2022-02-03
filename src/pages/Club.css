@@ -1,0 +1,198 @@
+@media all and (max-width: 1100px) {
+  .clubMain > div:nth-child(2) {
+    font-size: calc(6vw + 2vh) !important;
+  }
+  .clubCardContainer > div {
+    flex-direction: column;
+  }
+  .clubCardContainer > div:nth-child(2n -1) .cardSizeTwo {
+    margin-left: 29vw;
+  }
+  .clubCardContainer > div:nth-child(2n) .cardSizeTwo {
+    margin-right: 29vw;
+  }
+  .cardSizeOne {
+    height: 12vh !important;
+    width: 45vw !important;
+  }
+  .cardSizeTwo {
+    animation: growUpMobile 0.3s ease-out forwards !important;
+  }
+  .clubCard > span {
+    font-size: 4vw !important;
+    margin-left: 2vw !important;
+  }
+  .paraVisible {
+    font-size: 1.5vh !important;
+    font-weight: 300;
+    margin: 0;
+  }
+  .clubCardHover {
+    font-size: 4vw !important;
+    padding-left: 2vw !important;
+  }
+}
+@media all and (min-width: 1101) {
+  .clubCardContainer > div:nth-child(2n -1) .cardSizeTwo:first-child {
+    margin-left: 10vh !important;
+    opacity: 0.2;
+  }
+  .clubCardContainer > div:nth-child(2n) .cardSizeTwo:last-child {
+    margin-right: 5vw !important;
+  }
+}
+.clubMain {
+  min-height: 100vh;
+  width: 100%;
+  padding: 10vh 5vw 0 5vw;
+  background-color: rgb(250, 250, 250);
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.clubBG1 {
+  background-image: url("../assets/clubBG2.png");
+}
+.clubBG2 {
+  background-image: url("../assets/clubBG.png");
+}
+.clubCardContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 3vw;
+  width: 100%;
+}
+.clubCardContainer > div {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 6vh 0;
+  /* background-color: aquamarine; */
+}
+.clubMain > div:nth-child(2) {
+  font-size: 12vh;
+  font-weight: 800;
+  color: white;
+  text-shadow: -1px 1px 0 var(--orange-hex), 1px 1px 0 var(--orange-hex),
+    1px -1px 0 var(--orange-hex), -1px -1px 0 var(--orange-hex);
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.clubMain > div:nth-child(2):hover {
+  color: var(--orange-hex);
+  text-shadow: -2px 0px 0 rgb(255, 255, 255), -3px 1px 0 var(--orange-hex),
+    1px 1px 0 var(--orange-hex), 1px -1px 0 var(--orange-hex),
+    -3px -1px 0 var(--orange-hex);
+}
+.clubCard {
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  margin: 10px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.2), 0 5px 7px rgba(0, 0, 0, 0.1);
+}
+.clubCard > span {
+  margin-left: 2vh;
+  font-size: 3vh;
+  font-weight: bold;
+}
+.clubCardHover {
+  position: absolute;
+  min-height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  padding: 2vh 2vw;
+  font-size: 3vh;
+  font-weight: bold;
+  line-height: 3.5vh;
+  color: white;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-direction: column;
+  opacity: 0;
+  transition: 0.35s ease-in;
+}
+.clubCardHover:hover {
+  opacity: 1;
+}
+
+.paraHidden {
+  display: none;
+}
+.paraVisible {
+  font-size: 2.5vh;
+  font-weight: 300;
+  line-height: 2.7vh;
+  margin: 0;
+}
+.cardSizeOne {
+  height: 20vh;
+  width: 18.5vw;
+}
+.cardSizeTwo {
+  height: 40vh;
+  width: 39vw;
+  animation: growUp 0.2s cubic-bezier(0.23, 0.06, 0.65, 1.39) forwards;
+}
+@keyframes growUp {
+  0% {
+    height: 20vh;
+    width: 19vw;
+  }
+  100% {
+    height: 40vh;
+    width: 39vw;
+  }
+}
+@keyframes growUpMobile {
+  0% {
+    height: 12vh;
+    width: 45vw;
+  }
+  100% {
+    height: 30vh;
+    width: 70vw;
+  }
+}
+.cardSizeTwo > .clubCardHover {
+  opacity: 1 !important;
+}
+
+.clubCardHover.one {
+  background-color: var(--orange-hex);
+}
+.clubCardHover.two {
+  background-color: var(--yellow-hex);
+}
+.clubCardHover.three {
+  background-color: var(--green-hex);
+}
+.clubCardHover.four {
+  background-color: black;
+}
+.clubCardHover.five {
+  background-color: var(--blue-hex);
+}
+.clubCardHover.six {
+  background-color: var(--plum-hex);
+}
+.clubCardHover.seven {
+  background-color: var(--brown-hex);
+}
+.clubCardHover.eight {
+  background-color: var(--grey-hex);
+}

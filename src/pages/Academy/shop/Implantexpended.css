@@ -1,0 +1,176 @@
+@media all and (min-width: 1101px) {
+  .productprice {
+    display: flex;
+    flex-direction: row-reverse;
+    font-weight: 500;
+    margin-right: 30px;
+  }
+  .mainbuttons {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .imagedivimage {
+    height: 350px;
+    width: 260px;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  .expendedimplantdiv {
+    width: 912px;
+    height: 400px;
+    margin-left: 0px;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    /* Get Implant/Imeverywhere */
+    background: #ffffff;
+
+    /* Get implant shadow */
+    box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+  }
+  .expendedimplantdivimage {
+    width: 299px;
+    height: 400px;
+    margin-left: 30px;
+    margin-top: 0px;
+  }
+  .implantimagetiles {
+    width: 100px;
+    height: 400px;
+    margin-left: 5px;
+    margin-top: 20px;
+  }
+  .expandedimplantdetails {
+    width: 500px;
+    height: 400px;
+    margin-left: 5px;
+  }
+  .productdisc {
+    height: 220px;
+    margin-right: 30px;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  .producttilesimage {
+    height: 70px;
+    width: 100px;
+  }
+}
+@media all and (max-width: 1100px) {
+  .expendedimplantdiv {
+    width: 343px;
+    height: 361px;
+    margin-left: 0px;
+    margin-top: 0px;
+
+    /* Get Implant/Imeverywhere */
+
+    background: #ffffff;
+    /* Get implant shadow */
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+  }
+  .producttilesimage {
+    width: 50px;
+    height: 50px;
+    left: 15px;
+    top: 28px;
+  }
+  .imagedivimage {
+    width: 133px;
+    height: 133px;
+    left: 0px;
+    
+  }
+  .expandedimplantdetails {
+    width: 158px;
+    height: 300px;
+    margin-left: 35px;
+    margin-top: 20px;
+  }
+  .expendedimplantdivimage {
+    width: 133px;
+    height: 300px;
+    margin-left: 5px;
+    margin-top: 0px;
+  }
+  .productprice {
+  
+    font-weight: 500;
+    margin-right: 20px;
+  }
+  .mainbuttons {
+   margin-top: 20px;
+  }
+  .productdisc {
+    height: 160px;
+    width: 160px;
+    margin-right: 5px;
+    margin-bottom: 0px;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 12px;
+  }
+  .implantimagetiles {
+    width: 0;
+    height: 400px;
+  }
+  
+  .productvariant {
+    width: 50px;
+    height: 16px;
+   
+    /* black/extralight/12 */
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 8px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    left: 0px;
+    margin-top: 0px;
+    color: #000000;
+  }
+  .productvariantselect {
+   
+    width: 111px;
+    height: 24px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 8px;
+    line-height: 12px;
+
+    /* Get Implant/Imeverywhere */
+    background: #ffffff;
+    left: 0px;
+   
+    /* Get implant shadow */
+    box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.25);
+    border: none;
+  }
+  .productvariantselect option {
+    
+    width: 131px;
+    height: 12px;
+    left: 154px;
+    top: 64px;
+
+    /* black/extralight/8 */
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 8px;
+    line-height: 12px;
+
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+  }
+}
