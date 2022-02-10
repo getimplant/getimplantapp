@@ -28,7 +28,7 @@
   }
   .howitworksContent > h1 {
     position: absolute;
-    top: 20%;
+    top: 25%;
     z-index: 10;
     color: white;
   }
@@ -169,7 +169,7 @@
   /* position: relative; */
 }
 .howitworksContent > h1 {
-  font-size: calc(4vh + 1.2vw);
+  font-size: calc(3.5vh + 1.5vw);
   font-weight: 900;
   margin: 0;
 }

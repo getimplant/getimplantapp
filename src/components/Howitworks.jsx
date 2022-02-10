@@ -1,36 +1,63 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import './Howitworks.css';
 import Howitworks1 from '../assets/Home/howitworks1.png';
 import Howitworks2 from '../assets/Home/howitworks2.png';
 import Howitworks3 from '../assets/Home/howitworks3.png';
 import Howitworks4 from '../assets/Home/howitworks4.png';
 
+import HowitworksMobile1 from '../assets/Home/howitworksMobile1.png';
+import HowitworksMobile2 from '../assets/Home/howitworksMobile2.png';
+import HowitworksMobile3 from '../assets/Home/howitworksMobile3.png';
+import HowitworksMobile4 from '../assets/Home/howitworksMobile4.png';
+
 export default function Howitworks() {
+  const windowWidth = window.innerWidth;
+  const windowHeight = window.innerHeight;
+  const isLandscapeMode = windowHeight < windowWidth ? true : false;
+
+  const itemRef = useRef(1);
   const [itemNo, setItemNo] = useState(1);
+
   const handleItemNo = () => {
-    if (itemNo == 4) {
+    if (itemNo === 4) {
+      itemRef.current = 1;
       setItemNo(1);
     } else {
+      itemRef.current = itemNo + 1;
       setItemNo(itemNo + 1);
     }
   };
+  const cycleState = (n) => {
+    setItemNo(n);
+  };
+
+  useEffect(() => {
+    setInterval(() => {
+      if (itemRef.current === 4) {
+        itemRef.current = 1;
+      } else {
+        itemRef.current = itemRef.current + 1;
+      }
+      cycleState(itemRef.current);
+    }, 4000);
+  }, []);
   return (
     <div className='howitworksMain'>
       <div className='imgContainer' onClick={handleItemNo}>
         <img
-          src={Howitworks1}
+          src={isLandscapeMode ? Howitworks1 : HowitworksMobile1}
           className={itemNo === 1 ? 'imageActive' : 'imageInactive'}
         />
         <img
-          src={Howitworks2}
+          src={isLandscapeMode ? Howitworks2 : HowitworksMobile2}
           className={itemNo === 2 ? 'imageActive' : 'imageInactive'}
         />
         <img
-          src={Howitworks3}
+          src={isLandscapeMode ? Howitworks3 : HowitworksMobile3}
           className={itemNo === 3 ? 'imageActive' : 'imageInactive'}
         />
         <img
-          src={Howitworks4}
+          src={isLandscapeMode ? Howitworks4 : HowitworksMobile4}
           className={itemNo === 4 ? 'imageActive' : 'imageInactive'}
         />
       </div>
