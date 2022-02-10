@@ -13,6 +13,7 @@ import video from '../assets/patient video for website.mp4';
 
 import { Popup /* or Slider */ } from 'react-typeform-embed';
 import { Sidetab /* or Popover */ } from 'react-typeform-embed';
+import Howitworks from '../components/Howitworks';
 
 // import { grid } from "@mui/system";
 
@@ -38,36 +39,6 @@ export default function Home({ setModal, setMenu }) {
             window.open("https://e4h3uqkvd80.typeform.com/to/a31vCGUw")
           }
         /> */}
-      </div>
-      <div className='howitworks' id='howitworks'>
-        <h1>How it works?</h1>
-        <span>
-          <div className='howitworksCards'>
-            <div>
-              <p />
-              <h4>Book an appointment</h4>
-            </div>
-            <div>
-              <p />
-              <h4>Treatment consultation</h4>
-            </div>
-          </div>
-          <div className='howitworksCards'>
-            <div>
-              <p />
-              <h4>Treatment initiated</h4>
-            </div>
-            <div>
-              <p />
-              <h4>Post-treatment care</h4>
-            </div>
-          </div>
-        </span>
-        <button className='HomeBTN'>
-          <Popup size={80} id='a31vCGUw'>
-            Book an appointment
-          </Popup>
-        </button>
       </div>
       <div className='implantStory'>
         <div className='implantDesktop'>
@@ -100,6 +71,9 @@ export default function Home({ setModal, setMenu }) {
           </button>
         </div>
       </div>
+
+      <Howitworks />
+
       <div className='storysection' style={{ backgroundColor: '#f5e3b0' }}>
         <div className='storysectionIMG1'></div>
         <div>
