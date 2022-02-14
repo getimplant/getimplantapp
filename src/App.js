@@ -104,9 +104,9 @@ function App() {
           <Route exact path='/'>
             <Home setModal={setModal} setMenu={setMenu} />
           </Route>
-          <Route exact path='/club/members'>
+          {/* <Route exact path='/club/members'>
             <PrivateRoute component={AcademyContent} setNavbar={setNavbar} />
-          </Route>
+          </Route> */}
           <Route path='/club'>
             <Club setNavbar={setNavbar} setMenu={setMenu} />
           </Route>
@@ -118,31 +118,31 @@ function App() {
             <Market />
           </Route>
 
-          <Route exact path='/academy'>
+          <Route exact path='/login'>
             <Academy setNavbar={setNavbar} setMenu={setMenu} />
           </Route>
-          <Route exact path='/academy/beamember'>
+          {/* <Route exact path='/academy/beamember'>
             <Beamenber
               setNavbar={setNavbar}
               setMenu={setMenu}
               setMenu={setMenu}
             />
-          </Route>
-          <Route exact path='/academy/members'>
+          </Route> */}
+          {/* <Route exact path='/academy/members'>
             <PrivateRoute
               component={AcademyContent}
               setNavbar={setNavbar}
               setMenu={setMenu}
             />
-          </Route>
-          <Route exact path='/admin'>
+          </Route> */}
+          {/* <Route exact path='/admin'>
             <PrivateRoute
               component={ListProducts}
               setNavbar={setNavbar}
               setMenu={setMenu}
             />
-          </Route>
-          <Route exact path='/admin/addnewproduct'>
+          </Route> */}
+          {/* <Route exact path='/admin/addnewproduct'>
             <PrivateRoute
               component={AddProduct}
               setNavbar={setNavbar}
@@ -169,7 +169,7 @@ function App() {
               setNavbar={setNavbar}
               setMenu={setMenu}
             />
-          </Route>
+          </Route> */}
         </Switch>
 
         {navbar ? <Footer setProvider={setProvider} /> : ''}

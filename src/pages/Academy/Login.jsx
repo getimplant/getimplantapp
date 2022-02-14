@@ -57,7 +57,7 @@ export default function Login({ setSingup, message, setMessage }) {
   const alreadyloggedin = () => {
     setMessage('you are already logged in,redirecting...');
     setTimeout(() => {
-      history.push('/academy/members');
+      history.push('/');
     }, 5000);
   };
   useEffect(() => {
@@ -95,15 +95,9 @@ export default function Login({ setSingup, message, setMessage }) {
     signInWithEmailAndPassword(auth, email, password)
       .then((cred) => {
         const userdata = readuserdata();
-        if (userdata.hasOwnProperty('isamember')) {
-          if (userdata.isamember === true) {
-            cred.user.emailVerified && history.push('/academy/members');
-          } else {
-            cred.user.emailVerified && history.push('/academy/shop');
-          }
-        } else {
-          cred.user.emailVerified && history.push('/academy/shop');
-        }
+        if( cred.user.emailVerified){
+         window.location.replace("/")
+       }
       })
       .catch((error) => {
         setMessage('');

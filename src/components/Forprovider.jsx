@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState,useContext } from 'react';
 import { NavLink } from 'react-bootstrap';
 import './Forprovider.css';
 import logo from '../assets/LOGO.png';
 import Academy from '../pages/Academy/Academy';
+import {AuthContext} from "../pages/Academy/AuthProvider"
 import {
   BrowserRouter as Router,
   Switch,
@@ -13,10 +14,15 @@ import {
 import { useHistory } from 'react-router-dom';
 export default function Forprovider({ setProvider, setNavbar, navbar }) {
   let history = useHistory();
+  const context=useContext(AuthContext);
+  const uid=context.value.user;
+ 
   function handleclickacademy() {
     setProvider(0);
-
-    history.push('/academy');
+            // handleclickacademy();
+           uid? window.open(
+              'https://get-implant.myshopify.com/collections/courses'
+            ):history.push("/login")
   }
   function handleclickclub() {
     setProvider(0);
@@ -25,8 +31,9 @@ export default function Forprovider({ setProvider, setNavbar, navbar }) {
   }
   function handleclickshop() {
     setProvider(0);
-
-    history.push('academy/shop');
+           uid? window.open(
+              ' https://shops.getimplant.com/?_cd=f48f9ed0562bfdc6870a1f681e328fc767fd7736a2164155ba277b6371baaa1a&_uid=73640968364'
+            ):history.push("/login")
   }
   return (
     <div className='providerMain'>
@@ -35,7 +42,7 @@ export default function Forprovider({ setProvider, setNavbar, navbar }) {
         <Link
           to='/club'
           onClick={() => {
-            handleclickclub();
+           handleclickclub();
             // window.open(
             //   'https://get-implant.myshopify.com/collections/memberships'
             // );
@@ -49,24 +56,15 @@ export default function Forprovider({ setProvider, setNavbar, navbar }) {
       <div className='providerBars'>
         <Link
           style={{ textDecoration: 'none' }}
-          to='/academy'
-          onClick={() => {
-            // handleclickacademy();
-            window.open(
-              'https://get-implant.myshopify.com/collections/courses'
-            );
-          }}
+          to='#'
+          onClick={() => handleclickacademy()}
         >
           <h2>Academy</h2>
         </Link>
       </div>
       <div className='providerBars'>
         <NavLink
-          onClick={() =>
-            window.open(
-              ' https://shops.getimplant.com/?_cd=f48f9ed0562bfdc6870a1f681e328fc767fd7736a2164155ba277b6371baaa1a&_uid=73640968364'
-            )
-          }
+          onClick={() =>handleclickshop()}
           style={{ textDecoration: 'none' }}
         >
           <h2>Store</h2>
@@ -90,7 +88,7 @@ export default function Forprovider({ setProvider, setNavbar, navbar }) {
         <NavLink
           style={{ textDecoration: 'none' }}
           onClick={() =>
-            window.open('https://www.facebook.com/groups/1495380457508792')
+           uid? window.open('https://www.facebook.com/groups/1495380457508792'):history.push("/login")
           }
         >
           <h2>Forum</h2>

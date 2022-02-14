@@ -42,7 +42,7 @@ const PrivateRoute = ({ component: RouteComponent, ...rest }) => {
           (!value.user
             ? setMessage("Please login first")
             : setMessage("email not verified,please do verify first"),
-          (<Redirect to="/academy" />))
+          (<Redirect to="/login" />))
         )
       }
     />
