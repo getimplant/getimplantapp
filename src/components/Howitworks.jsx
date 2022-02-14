@@ -45,18 +45,22 @@ export default function Howitworks() {
     <div className='howitworksMain'>
       <div className='imgContainer' onClick={handleItemNo}>
         <img
+          loading='lazy'
           src={isLandscapeMode ? Howitworks1 : HowitworksMobile1}
           className={itemNo === 1 ? 'imageActive' : 'imageInactive'}
         />
         <img
+          loading='lazy'
           src={isLandscapeMode ? Howitworks2 : HowitworksMobile2}
           className={itemNo === 2 ? 'imageActive' : 'imageInactive'}
         />
         <img
+          loading='lazy'
           src={isLandscapeMode ? Howitworks3 : HowitworksMobile3}
           className={itemNo === 3 ? 'imageActive' : 'imageInactive'}
         />
         <img
+          loading='lazy'
           src={isLandscapeMode ? Howitworks4 : HowitworksMobile4}
           className={itemNo === 4 ? 'imageActive' : 'imageInactive'}
         />
@@ -95,34 +99,34 @@ export default function Howitworks() {
         <h1>How it works</h1>
 
         {itemNo === 1 ? (
-          <h5>Book an appointment</h5>
+          <h5>Welcome aboard</h5>
         ) : itemNo === 2 ? (
-          <h5>Treatment consultation</h5>
+          <h5>Get free assessment</h5>
         ) : itemNo === 3 ? (
-          <h5>Treatment intiation</h5>
+          <h5>Let’s get started</h5>
         ) : (
-          <h5>Post treatment check up</h5>
+          <h5>Follow it up</h5>
         )}
 
         {itemNo === 1 ? (
           <h6>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada
-            eu facilisi quam sagittis, ut vestibulum. A tempor eget vestibulum.
+            An appointment with Get Implant, the oral health expert, is easy -
+            just punch in your details and get a confirmation via email
           </h6>
         ) : itemNo === 2 ? (
           <h6>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada
-            eu facilisi quam sagittis, ut vestibulum. A tempor eget vestibulum.
+            Expect a call from our patient-care officer for a free assessment of
+            your concern. Get an appointment at your nearest dental clinic
           </h6>
         ) : itemNo === 3 ? (
           <h6>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada
-            eu facilisi quam sagittis, ut vestibulum. A tempor eget vestibulum.
+            Meet our expert prosthodontists. Let them help you pick the best
+            treatment plan, and get started with your recovery
           </h6>
         ) : (
           <h6>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada
-            eu facilisi quam sagittis, ut vestibulum. A tempor eget vestibulum.
+            A follow-up is a must for total dental recovery. Let us ensure you
+            are on the best path to great oral health
           </h6>
         )}
       </div>
