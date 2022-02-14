@@ -55,10 +55,10 @@
   flex-direction: column;
 }
 .clubBG1 {
-  background-image: url("../assets/clubBG2.png");
+  background-image: url('../assets/clubBG2.png');
 }
 .clubBG2 {
-  background-image: url("../assets/clubBG.png");
+  background-image: url('../assets/clubBG.png');
 }
 .clubCardContainer {
   display: flex;
@@ -94,12 +94,13 @@
   background-color: rgb(255, 255, 255);
   border-radius: 8px;
   margin: 10px;
-  
+
   display: flex;
   align-items: center;
   justify-content: left;
   position: relative;
-  cursor: pointer;
+  /* cursor: pointer; */
+  cursor: default;
   overflow: hidden;
   box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.2), 0 5px 7px rgba(0, 0, 0, 0.1);
 }

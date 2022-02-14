@@ -71,6 +71,7 @@ export default function Home({ setModal, setMenu }) {
           </button>
         </div>
       </div>
+      <div id='howitworks' style={{ transform: 'translateY(-20vh)' }}></div>
 
       <Howitworks />
 

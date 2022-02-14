@@ -33,7 +33,7 @@ export default function Forprovider({ setProvider, setNavbar, navbar }) {
       <div className='providerBars'>
         <img className='providerLogo' src={logo} alt='' />
         <Link
-           to='/club'
+          to='/club'
           onClick={() => {
             handleclickclub();
             // window.open(
@@ -51,10 +51,10 @@ export default function Forprovider({ setProvider, setNavbar, navbar }) {
           style={{ textDecoration: 'none' }}
           to='/academy'
           onClick={() => {
-            handleclickacademy();
-            // window.open(
-            //   ' https://get-implant.myshopify.com/collections/courses'
-            // );
+            // handleclickacademy();
+            window.open(
+              'https://get-implant.myshopify.com/collections/courses'
+            );
           }}
         >
           <h2>Academy</h2>
@@ -90,12 +90,10 @@ export default function Forprovider({ setProvider, setNavbar, navbar }) {
         <NavLink
           style={{ textDecoration: 'none' }}
           onClick={() =>
-            window.open(
-              'https://drive.google.com/drive/folders/1EUHxjIAMfHNj3E2mTkChVTvX4WCGxnEd?usp=sharing'
-            )
+            window.open('https://www.facebook.com/groups/1495380457508792')
           }
         >
-          <h2>Start Case</h2>
+          <h2>Forum</h2>
         </NavLink>
       </div>
     </div>
