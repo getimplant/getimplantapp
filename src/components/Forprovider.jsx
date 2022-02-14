@@ -18,28 +18,32 @@ export default function Forprovider({ setProvider, setNavbar, navbar }) {
   const uid=context.value.user;
  
   function handleclickacademy() {
-    setProvider(0);
+  
             // handleclickacademy();
            uid? window.open(
               'https://get-implant.myshopify.com/collections/courses'
-            ):history.push("/login")
+            ):history.push("/login");
+            setProvider(0);
   }
   function handleclickclub() {
-    setProvider(0);
+  
 
     uid?window.open(
               'https://get-implant.myshopify.com/collections/memberships'
-            ):history.push("/login")
+            ):history.push("/login");
+            setProvider(0);
   }
   function handleclickshop() {
-    setProvider(0);
+  
            uid? window.open(
               ' https://shops.getimplant.com/?_cd=f48f9ed0562bfdc6870a1f681e328fc767fd7736a2164155ba277b6371baaa1a&_uid=73640968364'
-            ):history.push("/login")
+            ):history.push("/login");
+            setProvider(0);
   }
   function handleclickform(){
+   
+    uid? window.open('https://www.facebook.com/groups/1495380457508792'):history.push("/login");
     setProvider(0);
-    uid? window.open('https://www.facebook.com/groups/1495380457508792'):history.push("/login")
   }
   return (
     <div className='providerMain'>
