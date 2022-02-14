@@ -27,7 +27,9 @@ export default function Forprovider({ setProvider, setNavbar, navbar }) {
   function handleclickclub() {
     setProvider(0);
 
-    history.push('/club');
+    uid?window.open(
+              'https://get-implant.myshopify.com/collections/memberships'
+            ):history.push("/login")
   }
   function handleclickshop() {
     setProvider(0);
@@ -35,18 +37,17 @@ export default function Forprovider({ setProvider, setNavbar, navbar }) {
               ' https://shops.getimplant.com/?_cd=f48f9ed0562bfdc6870a1f681e328fc767fd7736a2164155ba277b6371baaa1a&_uid=73640968364'
             ):history.push("/login")
   }
+  function handleclickform(){
+    setProvider(0);
+    uid? window.open('https://www.facebook.com/groups/1495380457508792'):history.push("/login")
+  }
   return (
     <div className='providerMain'>
       <div className='providerBars'>
         <img className='providerLogo' src={logo} alt='' />
         <Link
-          to='/club'
-          onClick={() => {
-           handleclickclub();
-            // window.open(
-            //   'https://get-implant.myshopify.com/collections/memberships'
-            // );
-          }}
+          to='#'
+          onClick={() =>handleclickclub()}
           style={{ textDecoration: 'none' }}
           // onClick={handleclickclub}
         >
@@ -88,7 +89,7 @@ export default function Forprovider({ setProvider, setNavbar, navbar }) {
         <NavLink
           style={{ textDecoration: 'none' }}
           onClick={() =>
-           uid? window.open('https://www.facebook.com/groups/1495380457508792'):history.push("/login")
+        handleclickform()
           }
         >
           <h2>Forum</h2>
