@@ -22,27 +22,29 @@ export default function Forprovider({ setProvider, setNavbar, navbar }) {
             // handleclickacademy();
            uid? window.open(
               'https://get-implant.myshopify.com/collections/courses'
-            ):history.push("/login");
+            ):history.push("/academy/login");
             setProvider(0);
   }
   function handleclickclub() {
+    
+  
   
 
     uid?window.open(
               'https://get-implant.myshopify.com/collections/memberships'
-            ):history.push("/login");
+            ):history.push("/club");
             setProvider(0);
   }
   function handleclickshop() {
   
            uid? window.open(
               ' https://shops.getimplant.com/?_cd=f48f9ed0562bfdc6870a1f681e328fc767fd7736a2164155ba277b6371baaa1a&_uid=73640968364'
-            ):history.push("/login");
+            ):history.push("/store/login");
             setProvider(0);
   }
   function handleclickform(){
    
-    uid? window.open('https://www.facebook.com/groups/1495380457508792'):history.push("/login");
+    uid? window.open('https://www.facebook.com/groups/1495380457508792'):history.push("/fourm/login");
     setProvider(0);
   }
   return (

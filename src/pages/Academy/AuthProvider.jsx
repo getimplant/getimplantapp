@@ -19,7 +19,7 @@ export const AuthProvider = ({ children }) => {
   const [provider, setProvider] = useState(false);
   const [cartdata, setCartdata] = useState(null);
   const [message, setMessage] = useState("");
-  const [singup, setSingup] = useState(1);
+  const [singup, setSingup] = useState(0);
   //products
   const [type, setType] = useState("implants");
   useEffect(() => {

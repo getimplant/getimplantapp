@@ -29,6 +29,7 @@ const useStyles = makeStyles((theme) => ({
 
   inputfields: {
     width: '100%',
+    height: 'max-content',
     marginTop: '0px',
   },
   inputlable: {
@@ -71,22 +72,22 @@ export default function Singup({ setSingup, message, setMessage }) {
       .string('Enter your password')
       .min(8, 'Password should be of minimum 8 characters length')
       .required('Password is required'),
-    cpassword:yup.string()
-    .min(8)
-    .when("password", {
-      is: (val: any) => (val && val.length > 0 ? true : false),
-      then: yup.string().oneOf(
-        [yup.ref("password")],
-        "Both password need to be the same"
-      ),
-    })
-    .required("Confirm Password Required"),
+    cpassword: yup
+      .string()
+      .min(8)
+      .when('password', {
+        is: (val) => (val && val.length > 0 ? true : false),
+        then: yup
+          .string()
+          .oneOf([yup.ref('password')], 'Both password need to be the same'),
+      })
+      .required('Confirm Password Required'),
   });
   const initialValues = {
     password: '',
     email: '',
     username: '',
-    cpassword:''
+    cpassword: '',
   };
   const Submitsingupform = (e) => {
     const auth = getAuth();
@@ -191,7 +192,9 @@ export default function Singup({ setSingup, message, setMessage }) {
               error={formik.touched.password && Boolean(formik.errors.password)}
               helperText={formik.errors.password}
             />
-               <InputLabel className={classes.inputlable}>Confirm Password</InputLabel>
+            <InputLabel className={classes.inputlable}>
+              Confirm Password
+            </InputLabel>
             <TextField
               id='cpassword'
               type='password'
@@ -205,16 +208,14 @@ export default function Singup({ setSingup, message, setMessage }) {
               }}
               value={formik.values.cpassword}
               onChange={formik.handleChange}
-              error={formik.touched.cpassword && Boolean(formik.errors.cpassword)}
+              error={
+                formik.touched.cpassword && Boolean(formik.errors.cpassword)
+              }
               helperText={formik.errors.cpassword}
             />
             {/* <span className={classes.textField}> { formik.errors.password && formik.errors.password }</span> */}
           </div>
-          <button
-            className='signbutton'
-            type='submit'
-            style={{ marginTop: '50px' }}
-          >
+          <button className='signbutton' type='submit'>
             <span className='signbuttontext'> Sign Up</span>
           </button>
         </form>

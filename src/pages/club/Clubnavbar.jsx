@@ -22,7 +22,7 @@ export default function Clubnavbar({ scroll, setMenu, setProvider, navbar }) {
         <NavLink
           onClick={() => {
             setSingup(0);
-            history.push('/academy');
+            history.push('/club/login');
           }}
           style={{ textDecoration: 'none' }}
         >
@@ -31,13 +31,13 @@ export default function Clubnavbar({ scroll, setMenu, setProvider, navbar }) {
           </span>
         </NavLink>
 
-        <NavLink href='/academy/beamember' style={{ textDecoration: 'none' }}>
+        <NavLink href='/club/beamember' style={{ textDecoration: 'none' }}>
           <span style={{ marginLeft: '20px', color: 'black' }}>
             <b>Be a Member</b>
           </span>
         </NavLink>
 
-        <NavLink href='/' style={{ textDecoration: 'none' }}>
+        <NavLink href='/forum' style={{ textDecoration: 'none' }}>
           <span style={{ marginLeft: '20px', color: 'black' }}>
             <b>Forum</b>
           </span>

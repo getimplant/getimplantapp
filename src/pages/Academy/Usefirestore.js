@@ -7,8 +7,8 @@ const saveuserdata = async (values) => {
     const auth = getAuth()
     const user = await auth.currentUser
     const id = user.uid;
-    const docRef = await setDoc(doc(db, 'document', id), values);
-    console.log("Document written with ID: ", docRef.id);
+    const docRef = await addDoc(doc(db, 'document', id), values);
+    console.log("Document written with ID: ", docRef);
   } catch (e) {
     console.error("Error adding document: ", e);
   }

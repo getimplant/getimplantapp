@@ -12,6 +12,7 @@ import './Academy.css';
 import { AuthContext } from './AuthProvider';
 import { Redirect, useHistory } from 'react-router';
 import { readuserdata } from './Usefirestore';
+import { useLocation } from 'react-router-dom';
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
@@ -51,17 +52,20 @@ export default function Login({ setSingup, message, setMessage }) {
   const [resetemail, setResetEmail] = useState(false);
   const [isamember, setIsamember] = useState(0);
   const history = useHistory();
+  const location=useLocation();
+  const currUrl=location.pathname;
   const context = useContext(AuthContext);
   const userdata = context.value.userdata;
 
   const alreadyloggedin = () => {
     setMessage('you are already logged in,redirecting...');
     setTimeout(() => {
-      history.push('/');
+      window.location.replace('/');
     }, 5000);
   };
   useEffect(() => {
     context.value.user && context.value.user.emailVerified && alreadyloggedin();
+    
   }, []);
   const validationSchema = yup.object({
     email: yup
@@ -96,7 +100,26 @@ export default function Login({ setSingup, message, setMessage }) {
       .then((cred) => {
         const userdata = readuserdata();
         if( cred.user.emailVerified){
-         window.location.replace("/")
+        if(currUrl=="/club/login"){
+          window.open(
+            'https://get-implant.myshopify.com/collections/memberships'
+          )
+          window.location.replace("/")
+        }else if(currUrl=="/academy/login"){
+          window.open(
+            'https://get-implant.myshopify.com/collections/courses'
+          )
+          window.location.replace("/")
+        }else if(currUrl=="/store/login"){
+          window.open(
+            ' https://shops.getimplant.com/?_cd=f48f9ed0562bfdc6870a1f681e328fc767fd7736a2164155ba277b6371baaa1a&_uid=73640968364'
+          )
+          window.location.replace("/")
+        }else if(currUrl=="/fourm/login"){
+          window.open('https://www.facebook.com/groups/1495380457508792');
+          window.location.replace("/")
+        }
+
        }
       })
       .catch((error) => {

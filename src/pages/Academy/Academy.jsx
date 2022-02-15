@@ -16,6 +16,7 @@ import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { AuthContext } from "./AuthProvider";
 import * as polyline from "@mapbox/polyline";
 import { getdistance } from "../../Actions/getdistance";
+import { useLocation } from 'react-router-dom';
 export default function Academy({ setNavbar, setMenu }) {
   const authcontext = useContext(AuthContext);
   const acadnavbar = authcontext.value.acadnavbar;
@@ -23,6 +24,9 @@ export default function Academy({ setNavbar, setMenu }) {
   const message = authcontext.value.message;
   const singup = authcontext.value.singup;
   const setSingup = authcontext.value.setSingup;
+  const history=useHistory();
+  const location =useLocation();
+  const currUrl=location.pathname.slice(0,-6);
   let classname = "academyMain";
   {
     singup ? (classname = "singuppage") : (classname = "academyMain");
@@ -43,19 +47,19 @@ export default function Academy({ setNavbar, setMenu }) {
             <Box className="logindiv">
               <Card style={{ borderRadius: "12px" }}>
                 <CardContent>
-                  {singup ? (
-                    <Singup
+                  {singup==1 && (
+                    setSingup(0),window.location.replace(currUrl+"/beamember"))}
+                   {singup==2&&(<Singup
                       setSingup={setSingup}
                       message={message}
                       setMessage={setMessage}
-                    />
-                  ) : (
-                    <Login
+                    />)}
+                  {singup==0&&(<Login
                       setSingup={setSingup}
                       message={message}
                       setMessage={setMessage}
-                    />
-                  )}
+                    />)}
+                  
                 </CardContent>
                 <CardActions></CardActions>
               </Card>

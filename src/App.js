@@ -107,18 +107,38 @@ function App() {
           {/* <Route exact path='/club/members'>
             <PrivateRoute component={AcademyContent} setNavbar={setNavbar} />
           </Route> */}
-          <Route path='/club'>
+          <Route exact path='/club'>
             <Club setNavbar={setNavbar} setMenu={setMenu} />
           </Route>
-          <Route exact path='/club/beamember'>
+          {/* <Route exact path='/beamember'>
             <Beamenber setNavbar={setNavbar} setMenu={setMenu} />
+          </Route> */}
+          <Route exact path='/club/beamember'>
+          <Beamenber setNavbar={setNavbar} setMenu={setMenu} />
           </Route>
-
+          <Route exact path='/academy/beamember'>
+          <Beamenber setNavbar={setNavbar} setMenu={setMenu} />
+          </Route>
+          <Route exact path='/store/beamember'>
+          <Beamenber setNavbar={setNavbar} setMenu={setMenu} />
+          </Route>
+          <Route exact path='/fourm/beamember'>
+          <Beamenber setNavbar={setNavbar} setMenu={setMenu} />
+          </Route>
           <Route path='/marketing'>
             <Market />
           </Route>
 
-          <Route exact path='/login'>
+          <Route exact path='/club/login'>
+            <Academy setNavbar={setNavbar} setMenu={setMenu} />
+          </Route>
+          <Route exact path='/academy/login'>
+            <Academy setNavbar={setNavbar} setMenu={setMenu} />
+          </Route>
+          <Route exact path='/store/login'>
+            <Academy setNavbar={setNavbar} setMenu={setMenu} />
+          </Route>
+          <Route exact path='/fourm/login'>
             <Academy setNavbar={setNavbar} setMenu={setMenu} />
           </Route>
           {/* <Route exact path='/academy/beamember'>
