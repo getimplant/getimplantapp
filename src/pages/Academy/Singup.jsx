@@ -71,11 +71,22 @@ export default function Singup({ setSingup, message, setMessage }) {
       .string('Enter your password')
       .min(8, 'Password should be of minimum 8 characters length')
       .required('Password is required'),
+    cpassword:yup.string()
+    .min(8)
+    .when("password", {
+      is: (val: any) => (val && val.length > 0 ? true : false),
+      then: yup.string().oneOf(
+        [yup.ref("password")],
+        "Both password need to be the same"
+      ),
+    })
+    .required("Confirm Password Required"),
   });
   const initialValues = {
     password: '',
     email: '',
     username: '',
+    cpassword:''
   };
   const Submitsingupform = (e) => {
     const auth = getAuth();
@@ -180,7 +191,23 @@ export default function Singup({ setSingup, message, setMessage }) {
               error={formik.touched.password && Boolean(formik.errors.password)}
               helperText={formik.errors.password}
             />
-
+               <InputLabel className={classes.inputlable}>Confirm Password</InputLabel>
+            <TextField
+              id='cpassword'
+              type='password'
+              style={{ marginBottom: '40px', borderBottom: ' 1px' }}
+              placeholder=''
+              name='cpassword'
+              fullWidth
+              margin='40px'
+              InputLabelProps={{
+                shrink: true,
+              }}
+              value={formik.values.cpassword}
+              onChange={formik.handleChange}
+              error={formik.touched.cpassword && Boolean(formik.errors.cpassword)}
+              helperText={formik.errors.cpassword}
+            />
             {/* <span className={classes.textField}> { formik.errors.password && formik.errors.password }</span> */}
           </div>
           <button
