@@ -107,7 +107,7 @@ function App() {
           {/* <Route exact path='/club/members'>
             <PrivateRoute component={AcademyContent} setNavbar={setNavbar} />
           </Route> */}
-          <Route path='/club'>
+          <Route exact path='/club'>
             <Club setNavbar={setNavbar} setMenu={setMenu} />
           </Route>
           <Route exact path='/club/beamember'>

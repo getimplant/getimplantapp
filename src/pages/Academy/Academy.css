@@ -1,4 +1,28 @@
-@media all and (min-width: 1100px) {
+@media all and (min-width: var(--mq-medium)) {
+  * {
+    font-size: var(--base-font-size) * 1.2;
+    line-height: var(--base-line-height) * 1.2;
+  }
+}
+*/ :root {
+  --base-font: 16px;
+}
+
+.beamemberforminput > input:focus {
+  outline: none;
+}
+
+input:focus {
+  outline: none;
+  padding-right: 10px;
+  flex-grow: 1;
+}
+
+.beamemberforminput > input:focus-visible {
+  outline: none;
+}
+
+@media all and (min-width: 800px) {
   .academyMain {
     background-image: url(../../assets/academybg.png);
     position: absolute;
@@ -7,6 +31,7 @@
     left: 0px;
     top: 0px;
   }
+
   .singuppage {
     background-image: url(../../assets/singupbg.png);
     position: absolute;
@@ -15,6 +40,7 @@
     left: 0px;
     top: 0px;
   }
+
   .academyshopMain {
     width: 100%;
     padding: 10vh 5vw 0 5vw;
@@ -26,6 +52,7 @@
     flex-direction: row;
     position: relative;
   }
+
   .signbuttontext {
     position: static;
     width: auto;
@@ -54,6 +81,7 @@
     flex-grow: 0;
     margin: 0px 10px;
   }
+
   .productimg {
     min-width: 100px;
     height: 70px;
@@ -61,12 +89,14 @@
     margin-top: 20px;
     margin-left: 20px;
   }
+
   .productdetails {
     min-width: 100px;
     height: 200px;
     width: 200px;
     margin-top: 20px;
   }
+
   .logindiv {
     position: absolute;
     width: 387px;
@@ -81,6 +111,7 @@
     box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
   }
+
   .loginbutton {
     /* Auto Layout */
     display: flex;
@@ -98,6 +129,7 @@
     background: #000000;
     border-radius: 6px;
   }
+
   .signbutton {
     /* Auto Layout */
     display: flex;
@@ -115,6 +147,7 @@
     background: #000000;
     border-radius: 6px;
   }
+
   .loginbuttontext {
     position: static;
     width: auto;
@@ -143,42 +176,53 @@
     flex-grow: 0;
     margin: 0px 10px;
   }
+
   .productsdiv {
     width: 100%;
     margin-left: 0px;
     min-height: 400px;
     height: auto;
   }
+
   .productdiv {
     margin-top: 0px;
     margin-left: 0px;
-    width: "400px";
+    width: '400px';
   }
 
   .academycontentMain {
-    background-image: "white";
+    background-image: 'white';
     margin-top: 80px;
     margin-left: 35px;
     overflow-y: hidden;
+    padding-top: 41px;
   }
+
   .card {
     align-self: center;
   }
+
   .profilecontent {
     min-height: 80vh;
+    margin-top: 40px;
     width: 100%;
-    padding: 2vh 5vw 0 2vw;
+    /* padding: 2vh 5vw 0 2vw; */
+    overflow-y: scroll;
+    padding: 0px 32px 0px 0px;
     min-width: none;
     background-position: center;
-    margin-left: "0px";
+    margin-left: '0px';
 
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
   }
+
   .ordermaindiv {
     width: 80%;
     max-width: 400px;
   }
+
   .ordercontent {
     width: 100%;
     padding: 2vh 5vw 0 2vw;
@@ -189,21 +233,32 @@
     display: flex;
     flex-direction: row;
   }
+
+  .Orderflexcontent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    max-height: 400px;
+  }
+
   .orderimg {
     width: 40%;
     height: 200px;
   }
+
   .orderdetails {
     width: 60%;
     height: 200px;
     text-align: right;
   }
+
   .calenderdiv {
     position: absolute;
-    width: 348px;
-    height: 333px;
-    left: 35px;
-    top: 180px;
+    /* width: 463px;
+    height: 369px; */
+    left: 8%;
+    top: 31%;
+    margin-top: 50px;
 
     /* Get Implant/Imeverywhere */
     background: #ffffff;
@@ -213,9 +268,16 @@
     border-radius: 8px;
   }
 
+  /* .react-calendar {
+    margin-top: 13px;
+    width: 463px;
+    max-height: 100%;
+    border: none;
+  } */
+
   .datescheduleform {
     position: absolute;
-    width: 617px;
+    width: 717px;
     height: 426px;
     left: 589px;
     top: 180px;
@@ -227,6 +289,7 @@
     box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
   }
+
   .datescheduleform button {
     display: flex;
     flex-direction: row;
@@ -237,7 +300,8 @@
     position: absolute;
     width: 105px;
     height: 32px;
-    left: 503px;
+    /* left: 503px; */
+    right: 18px;
     top: 379px;
 
     /* Get Implant/sky */
@@ -273,8 +337,28 @@
     flex-grow: 0;
     margin: 0px 0px;
   }
+
+  .datescheduleformcontainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .datescheduleformgridcol1row2 {
+    display: flex;
+    gap: 24px;
+  }
+
+  /* .datescheduleformgridcol1row2{
+    display: grid;
+  } */
+
   .datescheduletitle {
     margin-left: 35%;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0px;
   }
 
   /* shop */
@@ -282,10 +366,17 @@
     width: 78%;
     height: 600px;
   }
+
   .cartdivmain {
     position: fixed;
     width: 320px;
-    height: fit-content;
+    background-color: white;
+    /* height: fit-content; */
+    min-height: 100vh;
+    right: 0;
+    margin-top: 10px;
+    box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
   }
 
   /* membership */
@@ -295,25 +386,36 @@
     margin-left: 20px;
     height: 100vh;
   }
+
   .membershipimg {
     min-width: 100px;
     height: 250px;
     width: 400px;
   }
+
   .membershipdetails {
     margin-left: 20px;
     height: 120px;
     width: 100%;
   }
+
   /* courses */
   .coursediv {
     margin-top: 40px;
     margin-left: 20px;
-    height: 80vh;
+    /* height: 80vh; */
   }
+
   .courseimg {
     min-width: 100px;
     height: 250px;
+    width: 450px;
+    margin-top: 0px;
+  }
+
+  .courseimg__expand {
+    min-width: 100px;
+    height: 400px;
     width: 450px;
     margin-top: 0px;
   }
@@ -326,9 +428,19 @@
     font-size: 20px;
     font-weight: 400;
   }
+
   .coursedetails span {
     margin-right: 50px;
   }
+
+  .read__more__active {
+    display: block;
+  }
+
+  .read__more__false {
+    display: none;
+  }
+
   .digonalpassthrough {
     position: absolute;
     width: 109px;
@@ -338,54 +450,71 @@
 
     /* Get Implant/Read */
   }
+
   /* cart */
   .cartheader {
     height: 50px;
     width: 100%;
+    padding-top: 15px;
+    margin-bottom: 10px;
   }
+
   .cartbody {
-    height: 400px;
+    height: 360px;
     width: 100%;
     overflow-y: scroll;
   }
+
   .cartfooter {
     height: 20px;
     width: 100%;
   }
+
   .beamembercontentdiv {
     position: absolute;
     height: 720px;
   }
+
   .beamemberMain {
-    background-image: url(../../assets/beamemberbg.png);
+    /* height: 100vh; */
+    /* background-image: url(../../assets/beamember1.png);
+    background-size: contain;
+    background-repeat: no-repeat; */
     position: relative;
-    width: 1024px;
-    height: 704px;
+    /* width: 1024px; */
+    /* background-size: auto; */
+    /* height: 704px; */
+    height: 100vh;
+    width: 70%;
+    /* height: 100vh; */
     left: 0px;
-    top: 64px;
+    /* margin: auto; */
   }
-  .beamemberMain div {
+
+  .beamemberMain > div {
     position: absolute;
+    padding: 22px 38px 22px 29px;
     width: 387px;
-    height: 500px;
-    left: 889px;
-    top: 95px;
+    height: fit-content;
+    right: -27%;
+    /* height: 500px; */
+    /* left: 889px; */
+    top: 161px;
     background: #ffffff;
 
     /* Get implant shadow */
     box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
   }
+
   .beamemberMainh3 {
     width: 250px;
     height: 18px;
-    margin-left: 86px;
-    margin-top: 30px;
+    padding-bottom: 3px;
 
     /* bold/12 */
     font-family: Poppins;
     font-style: normal;
-    font-weight: bold;
     font-size: 15px;
     line-height: 18px;
 
@@ -396,21 +525,89 @@
 
     color: #000000;
   }
+
+  .beamemberforminput {
+    display: flex;
+    flex-direction: column;
+    margin-top: 28px;
+  }
+
+  .beamemberforminput > input[type='date']:focus-visible {
+    outline: none;
+    background-color: transparent;
+  }
+
+  .beamemberforminput > input[type='date']:focus-within,
+  .beamemberforminput > input[type='date']:focus {
+    outline: none;
+    background-color: transparent;
+  }
+
+  select#smallinput:focus-visible,
+  select#smallinput:focus,
+  select#smalinput:focus-within {
+    outline-style: none;
+    background-color: transparent;
+  }
+
+  #smallinput {
+    width: 72px;
+  }
+
+  #inputselect select:focus {
+    border: 0px;
+    outline: 0px;
+    -webkit-appearance: none;
+    outline: none !important;
+  }
+
+  #inputselect select:focus-visible {
+    border: 0px;
+    outline: 0px;
+    -webkit-appearance: none;
+    outline: none !important;
+  }
+
+  .beamemberforminput > input,
+  .beamemberforminput > select {
+    border: none;
+    border-bottom: 1px solid #000000;
+    margin-top: 24px;
+    padding-bottom: 6px;
+    font-weight: 700;
+    color: var(--grey-hex);
+    background-color: transparent;
+  }
+
+  .beamemberforminput > input:focus {
+    color: #000000;
+    outline: none;
+  }
+
+  .beamemberforminput > label {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .beamemberforminput > input.error {
+    border-color: red !important;
+  }
+
   .beamemberMainbutton {
     justify-content: center;
     align-items: center;
     padding: 1px 8px;
-
+    margin-top: 28px;
+    float: right;
     position: relative;
     width: 84px;
     height: 32px;
-    left: 141px;
-    top: 390px;
-    bottom: 0px;
     /* Get Implant/Read */
     background-color: black;
     border-radius: 6px;
   }
+
   .beamemberMainbuttontext {
     width: 194px;
     height: 18px;
@@ -428,11 +625,22 @@
 
     color: white;
   }
+
   .flexcontent {
     display: flex;
     flex-direction: row;
     height: fit-content;
+    margin-right: 24px;
   }
+
+  .flexcontentgrid {
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-right: 73px; */
+    display: flex;
+    flex-direction: row;
+  }
+
   .shopcontentproducts {
     max-width: 950px;
   }
@@ -440,7 +648,7 @@
 
 /* mobile */
 
-@media all and (max-width: 1100px) {
+@media all and (max-width: 800px) {
   /* For desktop: */
 
   .singuppage {
@@ -448,25 +656,26 @@
     position: absolute;
     height: 100vh;
   }
+
   .beamemberMain {
-    background-image: url(../../assets/beamembermobile.png);
+    /* background-image: url(../../assets/beamember2.png); */
     position: relative;
-    width: 663px;
-    height: 802px;
+    height: 100vh;
+    /* width: 663px;
+    height: 802px; */
     left: 0px;
     top: 0px;
+    /* margin-bottom: 20px; */
     background-repeat: no-repeat;
   }
+
   .beamemberMainh3 {
     width: 250px;
     height: 18px;
-    margin-left: 60px;
-    margin-top: 40px;
-    position: absolute;
     /* bold/12 */
     font-family: Poppins;
-    font-style: normal;
-    font-weight: bold;
+    /* font-style: normal; */
+    font-weight: 400;
     font-size: 15px;
     line-height: 18px;
 
@@ -478,12 +687,15 @@
     color: #000000;
   }
 
-  .beamemberMain div {
+  .beamemberMain > div {
     position: absolute;
-    width: 343px;
-    height: 419px;
-    left: 10px;
-    top: 376px;
+    padding: 12px 12px 20px 11px;
+    width: 85%;
+    /* height: 419px; */
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, 0);
+    /* top: 376px; */
 
     /* Get Implant/Imeverywhere */
     background: #ffffff;
@@ -493,23 +705,75 @@
     border-radius: 8px;
   }
 
+  .beamemberforminput {
+    display: flex;
+    flex-direction: column;
+    margin-top: 28px;
+  }
+
+  .beamemberforminput > input[type='date']:focus-within,
+  .beamemberforminput > input[type='date']:focus {
+    outline: none;
+    background-color: transparent;
+  }
+
+  select#smallinput:focus-visible,
+  select#smallinput:focus,
+  select#smalinput:focus-within {
+    outline-style: none;
+    background-color: transparent;
+  }
+
+  #smallinput {
+    width: 72px;
+  }
+
+  .beamemberforminput > div > #inputselect {
+    border: none;
+    margin-top: 24px;
+    padding-bottom: 6px;
+    font-weight: 700;
+    color: var(--grey-hex);
+  }
+
+  .beamemberforminput > input,
+  .beamemberforminput > select {
+    border: none;
+    border-bottom: 1px solid #000000;
+    margin-top: 24px;
+    padding-bottom: 6px;
+    font-weight: 700;
+    color: var(--grey-hex);
+    background-color: transparent;
+  }
+
+  .beamemberforminput > input:focus {
+    outline: none;
+    color: black;
+  }
+
+  .beamemberforminput > label {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
   .beamemberMainbutton {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 1px 8px;
-
-    position: absolute;
+    margin-top: 24px;
     width: 84px;
     height: 32px;
-    left: 131px;
-    top: 325px;
+    float: right;
 
     /* Get Implant/Read */
     background: #000000;
     border-radius: 6px;
   }
+
   .beamemberMainbuttontext {
     width: 194px;
     height: 18px;
@@ -530,6 +794,7 @@
 
     color: white;
   }
+
   .academyMain {
     background-image: url(../../assets/academybgmobile.png);
     min-height: 100vh;
@@ -544,6 +809,7 @@
     overflow-y: hidden;
     flex-direction: column;
   }
+
   .academyshopMain {
     min-height: 100vh;
     width: 100%;
@@ -553,6 +819,7 @@
     background-position: center;
     margin-top: 0px;
   }
+
   .logindiv {
     width: 100%;
     display: block;
@@ -563,6 +830,7 @@
     margin-top: 70%;
     margin-bottom: 20px;
   }
+
   .signbuttontext {
     position: static;
     width: auto;
@@ -591,27 +859,35 @@
     flex-grow: 0;
     margin: 0px 10px;
   }
+
   .academycontentMain {
-    background-image: "white";
-    margin-top: 120px;
-    margin-left: 35px;
-    overflow-y: hidden;
+    background-image: 'white';
+    margin-top: 126px;
+    padding: 10px;
+    /* margin-left: 35px; */
+    overflow: hidden;
+    margin-left: 0;
   }
+
   .card {
     align-self: center;
   }
+
   .profilecontent {
-    margin-bottom: 40px;
-    min-height: 80vh;
+    margin-bottom: 40px 0px;
+    /* min-height: 80vh; */
     width: 100%;
-    padding: 2vh 5vw 0 2vw;
+    /* padding: 2vh 5vw 0 2vw; */
     min-width: none;
     background-position: center;
     margin-left: 0px;
   }
+
   .ordermaindiv {
-    width: 80%;
+    /* width: 80%; */
+    padding: 10px;
   }
+
   .ordercontent {
     width: 100%;
     padding: 2vh 5vw 0 2vw;
@@ -620,23 +896,36 @@
     margin-left: 0px;
     margin-bottom: 20px;
   }
+
+  .Orderflexcontent {
+    display: block;
+    overflow-y: scroll;
+    width: 100%;
+    max-width: 329px;
+    margin: auto;
+  }
+
   .orderimg {
     width: 100%;
     height: 150px;
   }
+
   .orderdetails {
     width: 100%;
     height: 200px;
     text-align: right;
   }
+
   .productsdiv {
-    position: absolute;
-    top: 1020px;
-    width: 80%;
+    /* position: absolute; */
+    /* top: 1020px; */
+    /* width: 80%; */
     margin-left: 0px;
-    min-height: 400px;
+    margin-top: 35px;
+    /* min-height: 400px; */
     height: auto;
   }
+
   .productdiv {
     margin-top: 40px;
     margin-left: 0px;
@@ -645,21 +934,25 @@
 
     width: 323px !important;
   }
+
   .productimg {
     width: 141px;
     margin-top: 20px;
     margin-left: 20px;
     height: 220px;
   }
+
   .productdetails {
     width: 202px;
     margin-top: 20px;
     margin-left: 20px;
   }
+
   .calenderdiv {
-    position: absolute;
+    /* position: absolute; */
     width: 309px;
-    height: 259px;
+    height: 290px;
+    margin: auto;
     left: 35px;
     top: 230px;
 
@@ -672,11 +965,14 @@
   }
 
   .datescheduleform {
-    position: absolute;
+    /* position: absolute; */
     width: 351px;
-    height: 381px;
+    height: fit-content;
     left: 16px;
     top: 587px;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
 
     /* Get Implant/Imeverywhere */
     background: #ffffff;
@@ -684,14 +980,15 @@
     /* Get implant shadow */
     box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.25);
   }
+
   .datescheduleform button {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 1px 2px;
-
-    position: absolute;
+    margin: 30px auto 0px auto;
+    /* position: absolute; */
     width: 105px;
     height: 32px;
     left: 60%;
@@ -730,10 +1027,30 @@
     flex-grow: 0;
     margin: 0px 0px;
   }
+
+  .datescheduleformcontainer {
+    display: flex;
+    flex-direction: column;
+    /* grid-template-columns: repeat(2, 1fr);
+    gap: 24px; */
+  }
+
+  .datescheduleformgridcol1row2 {
+    display: flex;
+    gap: 24px;
+  }
+
+  /* .datescheduleformgridcol1row2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  } */
+
   .datescheduletitle {
     text-align: center;
     margin: 30%;
   }
+
   .signbutton {
     /* Auto Layout */
     display: flex;
@@ -769,6 +1086,7 @@
     background: #000000;
     border-radius: 6px;
   }
+
   .loginbuttontext {
     position: static;
     width: auto;
@@ -813,6 +1131,7 @@
     box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
   }
+
   .membershipimg {
     position: absolute;
     width: 343px;
@@ -820,6 +1139,7 @@
     left: 0px;
     top: 0px;
   }
+
   .membershipdetails {
     position: absolute;
     width: 343px;
@@ -827,12 +1147,14 @@
     left: 20px;
     top: 220px;
   }
+
   .membershipmainbutton {
     width: 343px;
     height: 120px;
 
     margin-top: 15px;
   }
+
   /* courses */
   .coursediv {
     position: relative;
@@ -840,6 +1162,7 @@
     height: 320px;
     left: 0px;
     top: 10px;
+    margin-bottom: 50px;
 
     /* Get Implant/Imeverywhere */
     background: #ffffff;
@@ -847,22 +1170,27 @@
     /* Get implant shadow */
     box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
+    margin-bottom: 50px;
   }
-  .coursemainbuttons{
+
+  .coursemainbuttons {
     width: 343px;
     height: 120px;
 
     margin-top: 85px;
   }
+
+  .deskexpandprice {
+    display: none;
+  }
+
   .courseimg {
-   
     min-width: 100px;
     height: 100%;
     width: 100%;
   }
 
   .coursedetails {
-   
     margin-left: 20px;
     top: 202px;
     height: 120px;
@@ -870,6 +1198,7 @@
     font-size: 20px;
     font-weight: 400;
   }
+
   .coursedetails span {
     font-family: Poppins;
     font-style: normal;
@@ -880,37 +1209,64 @@
     /* Get Implant/Read */
     color: #000000;
   }
+
   .cartdivmain {
     position: fixed;
     width: 320px;
+    margin: auto;
   }
+
+  .read__more__false {
+    display: none;
+  }
+
+  .read__more__active {
+    display: block;
+  }
+
   .cartheader {
     height: 50px;
     width: 100%;
     margin-bottom: 20px;
   }
+
   .cartbody {
-    height: 400px;
+    height: calc(100vh - 220px);
     width: 100%;
     overflow-y: scroll;
     margin-bottom: 20px;
   }
+
   .cartfooter {
-    height: 20px;
+    height: fit-content;
     width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    z-index: 2;
+    background: white;
+    box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.25);
   }
 
   .shopcontentdiv {
     width: 78%;
     height: 700px;
+    /* margin: auto; */
   }
+
   .flexcontent {
     display: flex;
     flex-direction: column;
     height: fit-content;
   }
+
+  .flexcontentgrid {
+    width: 323px;
+    margin: auto;
+  }
+
   .digonalpassthrough {
-  
     width: 60px;
     height: 25.5px;
     margin-left: -33px;
@@ -918,11 +1274,23 @@
 
     /* Get Implant/Read */
   }
+
   /* .shopcontentproducts{
     min-width: 1000px;
   } */
   .cartflexcontent {
     display: flex;
     flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 31px;
+  }
+}
+
+@media all and (min-width: 1101px) {
+  .productdetails {
+    width: 58%;
+    height: 200px;
+    padding: 8px 15px 10px 11px;
+    margin-left: 20px;
   }
 }

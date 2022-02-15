@@ -1,9 +1,9 @@
-import React, { useEffect, useState,useContext } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 import { NavLink } from 'react-bootstrap';
 import './Forprovider.css';
 import logo from '../assets/LOGO.png';
 import Academy from '../pages/Academy/Academy';
-import {AuthContext} from "../pages/Academy/AuthProvider"
+import { AuthContext } from '../pages/Academy/AuthProvider';
 import {
   BrowserRouter as Router,
   Switch,
@@ -14,35 +14,34 @@ import {
 import { useHistory } from 'react-router-dom';
 export default function Forprovider({ setProvider, setNavbar, navbar }) {
   let history = useHistory();
-  const context=useContext(AuthContext);
-  const uid=context.value.user;
- 
+  const context = useContext(AuthContext);
+  const uid = context.value.user;
+
   function handleclickacademy() {
-  
-            // handleclickacademy();
-           uid? window.open(
-              'https://get-implant.myshopify.com/collections/courses'
-            ):history.push("/login");
-            setProvider(0);
+    // handleclickacademy();
+    uid
+      ? window.open('https://get-implant.myshopify.com/collections/courses')
+      : history.push('/login');
+    setProvider(0);
   }
   function handleclickclub() {
-  
-
-    uid?window.open(
-              'https://get-implant.myshopify.com/collections/memberships'
-            ):history.push("/login");
-            setProvider(0);
+    uid
+      ? window.open('https://get-implant.myshopify.com/collections/memberships')
+      : history.push('/login');
+    setProvider(0);
   }
   function handleclickshop() {
-  
-           uid? window.open(
-              ' https://shops.getimplant.com/?_cd=f48f9ed0562bfdc6870a1f681e328fc767fd7736a2164155ba277b6371baaa1a&_uid=73640968364'
-            ):history.push("/login");
-            setProvider(0);
+    uid
+      ? window.open(
+          ' https://shops.getimplant.com/?_cd=f48f9ed0562bfdc6870a1f681e328fc767fd7736a2164155ba277b6371baaa1a&_uid=73640968364'
+        )
+      : history.push('/login');
+    setProvider(0);
   }
-  function handleclickform(){
-   
-    uid? window.open('https://www.facebook.com/groups/1495380457508792'):history.push("/login");
+  function handleclickform() {
+    uid
+      ? window.open('https://www.facebook.com/groups/1495380457508792')
+      : history.push('/login');
     setProvider(0);
   }
   return (
@@ -51,7 +50,7 @@ export default function Forprovider({ setProvider, setNavbar, navbar }) {
         <img className='providerLogo' src={logo} alt='' />
         <Link
           to='#'
-          onClick={() =>handleclickclub()}
+          onClick={() => handleclickclub()}
           style={{ textDecoration: 'none' }}
           // onClick={handleclickclub}
         >
@@ -62,16 +61,13 @@ export default function Forprovider({ setProvider, setNavbar, navbar }) {
         <Link
           style={{ textDecoration: 'none' }}
           to='#'
-          onClick={() => handleclickacademy()}
+          onClick={handleclickacademy}
         >
           <h2>Academy</h2>
         </Link>
       </div>
       <div className='providerBars'>
-        <NavLink
-          onClick={() =>handleclickshop()}
-          style={{ textDecoration: 'none' }}
-        >
+        <NavLink onClick={handleclickshop} style={{ textDecoration: 'none' }}>
           <h2>Store</h2>
         </NavLink>
       </div>
@@ -93,7 +89,8 @@ export default function Forprovider({ setProvider, setNavbar, navbar }) {
         <NavLink
           style={{ textDecoration: 'none' }}
           onClick={() =>
-        handleclickform()
+            // handleclickform()
+            handleclickform()
           }
         >
           <h2>Forum</h2>
