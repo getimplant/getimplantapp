@@ -107,7 +107,7 @@ export default function Singup({ setSingup, message, setMessage }) {
           });
       })
       .catch(function (error) {
-        // Handle Errors here.
+        // Handle Errors hee.
         var errorCode = error.code;
         var errorMessage = error.message;
         if (errorCode == 'auth/weak-password') {
