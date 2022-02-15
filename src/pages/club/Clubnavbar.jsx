@@ -9,8 +9,14 @@ import { Link } from 'react-router-dom';
 import { useHistory } from 'react-router';
 export default function Clubnavbar({ scroll, setMenu, setProvider, navbar }) {
   const authcontext = useContext(AuthContext);
+  const uid = authcontext.value.user;
   const setSingup = authcontext.value.setSingup;
   const history = useHistory();
+  function handleclickform() {
+    uid
+      ? window.open('https://www.facebook.com/groups/1495380457508792')
+      : history.push('/fourm/login');
+  }
   return (
     <div className='NavbarMain'>
       <div>
@@ -37,22 +43,11 @@ export default function Clubnavbar({ scroll, setMenu, setProvider, navbar }) {
           </span>
         </NavLink>
 
-        <NavLink href='/forum' style={{ textDecoration: 'none' }}>
+        <NavLink onClick={handleclickform} style={{ textDecoration: 'none' }}>
           <span style={{ marginLeft: '20px', color: 'black' }}>
             <b>Forum</b>
           </span>
         </NavLink>
-
-        <NavLink href='/' style={{ textDecoration: 'none' }}>
-          <span style={{ marginLeft: '20px', color: 'black' }}>
-            <b>Extras</b>
-          </span>
-        </NavLink>
-      </div>
-      <div>
-        <div onClick={() => setMenu(true)}>
-          <img src={menu} alt='' style={{ width: '30px', height: '20px' }} />
-        </div>
       </div>
     </div>
   );
