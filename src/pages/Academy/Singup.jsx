@@ -60,6 +60,26 @@ const useStyles = makeStyles((theme) => ({
 }));
 export default function Singup({ setSingup, message, setMessage }) {
   const classes = useStyles();
+  const [name,setName]=useState("null");
+  const [pNumber,setpNumber]=useState("null");
+  const [lNumber,setlNumber]=useState("null");
+  const [address,setaddress]=useState("null");
+  const getlocaldata=()=>{
+    localStorage.getItem("name")&&setName(localStorage.getItem("name"));
+    localStorage.getItem("pNumber")&&setpNumber(localStorage.getItem("pNumber"));
+    localStorage.getItem("lNumber")&&setlNumber(localStorage.getItem("lNumber"));
+    localStorage.getItem("address")&&setaddress(localStorage.getItem("address"));
+  }
+
+  const cleardata=()=>{
+    localStorage.removeItem("name");
+    localStorage.removeItem("pNumber");
+    localStorage.removeItem("lNumber");
+    localStorage.removeItem("address");
+  }
+  useEffect(()=>{
+    getlocaldata();
+  },[]);
   const validationSchema = yup.object({
     username: yup
       .string('Enter your username')
@@ -95,17 +115,16 @@ export default function Singup({ setSingup, message, setMessage }) {
     const username = e.username;
     const password = e.password;
     createUserWithEmailAndPassword(auth, email, password)
-      .then((cred) => {
-        const value = { username, email };
-        saveuserdata(value);
-        sendEmailVerification(auth.currentUser)
-          .then(() => {
-            signOut(auth);
-          })
-          .then(() => {
-            setMessage('verification link sent ,please verify');
-            setSingup(0);
-          });
+    .then((cred) => {
+      const valuess = { username:username, email:email,name:name,lNumber:lNumber,pNumber:pNumber,address:address };
+      saveuserdata(valuess);
+      sendEmailVerification(auth.currentUser).then(() => {
+        signOut(auth)
+      }).then(()=>{
+        cleardata();
+      setMessage("verification link sent ,please verify");
+        // setSingup(0);
+      });
       })
       .catch(function (error) {
         // Handle Errors hee.

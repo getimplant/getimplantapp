@@ -3,16 +3,15 @@ import { db } from "../../firebase/config";
 import { getAuth } from "@firebase/auth";
 import '../../firebase/config'
 const saveuserdata = async (values) => {
-  try {
+ 
     const auth = getAuth()
     const user = await auth.currentUser
     const id = user.uid;
-    const docRef = await addDoc(doc(db, 'document', id), values);
+    const docRef = await addDoc(collection(db, 'document'), values);
     console.log("Document written with ID: ", docRef);
-  } catch (e) {
-    console.error("Error adding document: ", e);
-  }
-
+    console.log("Document written with ID: ");
+ 
+return docRef
 
 }
 const saveproduct = async (values) => {
