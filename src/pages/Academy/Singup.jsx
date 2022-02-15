@@ -110,20 +110,23 @@ export default function Singup({ setSingup, message, setMessage }) {
     cpassword: '',
   };
   const Submitsingupform = (e) => {
+    
     const auth = getAuth();
     const email = e.email;
     const username = e.username;
     const password = e.password;
+    const valuess = { username:username, email:email,name:name,lNumber:lNumber,pNumber:pNumber,address:address };
+    saveuserdata(valuess);
     createUserWithEmailAndPassword(auth, email, password)
     .then((cred) => {
-      const valuess = { username:username, email:email,name:name,lNumber:lNumber,pNumber:pNumber,address:address };
-      saveuserdata(valuess);
+     
+    
       sendEmailVerification(auth.currentUser).then(() => {
         signOut(auth)
       }).then(()=>{
         cleardata();
       setMessage("verification link sent ,please verify");
-        // setSingup(0);
+        setSingup(0);
       });
       })
       .catch(function (error) {

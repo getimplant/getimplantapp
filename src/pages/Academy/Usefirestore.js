@@ -4,9 +4,7 @@ import { getAuth } from "@firebase/auth";
 import '../../firebase/config'
 const saveuserdata = async (values) => {
  
-    const auth = getAuth()
-    const user = await auth.currentUser
-    const id = user.uid;
+  
     const docRef = await addDoc(collection(db, 'document'), values);
     console.log("Document written with ID: ", docRef);
     console.log("Document written with ID: ");
