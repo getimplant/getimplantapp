@@ -1,9 +1,9 @@
-import React, { useEffect, useState,useContext } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 import { NavLink } from 'react-bootstrap';
 import './Forprovider.css';
 import logo from '../assets/LOGO.png';
 import Academy from '../pages/Academy/Academy';
-import {AuthContext} from "../pages/Academy/AuthProvider"
+import { AuthContext } from '../pages/Academy/AuthProvider';
 import {
   BrowserRouter as Router,
   Switch,
@@ -14,9 +14,9 @@ import {
 import { useHistory } from 'react-router-dom';
 export default function Forprovider({ setProvider, setNavbar, navbar }) {
   let history = useHistory();
-  const context=useContext(AuthContext);
-  const uid=context.value.user;
- 
+  const context = useContext(AuthContext);
+  const uid = context.value.user;
+
   function handleclickacademy() {
   
             // handleclickacademy();
@@ -53,7 +53,7 @@ export default function Forprovider({ setProvider, setNavbar, navbar }) {
         <img className='providerLogo' src={logo} alt='' />
         <Link
           to='#'
-          onClick={() =>handleclickclub()}
+          onClick={() => handleclickclub()}
           style={{ textDecoration: 'none' }}
           // onClick={handleclickclub}
         >
@@ -64,16 +64,13 @@ export default function Forprovider({ setProvider, setNavbar, navbar }) {
         <Link
           style={{ textDecoration: 'none' }}
           to='#'
-          onClick={() => handleclickacademy()}
+          onClick={handleclickacademy}
         >
           <h2>Academy</h2>
         </Link>
       </div>
       <div className='providerBars'>
-        <NavLink
-          onClick={() =>handleclickshop()}
-          style={{ textDecoration: 'none' }}
-        >
+        <NavLink onClick={handleclickshop} style={{ textDecoration: 'none' }}>
           <h2>Store</h2>
         </NavLink>
       </div>
@@ -95,7 +92,8 @@ export default function Forprovider({ setProvider, setNavbar, navbar }) {
         <NavLink
           style={{ textDecoration: 'none' }}
           onClick={() =>
-        handleclickform()
+            // handleclickform()
+            handleclickform()
           }
         >
           <h2>Forum</h2>

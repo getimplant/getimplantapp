@@ -1294,3 +1294,12 @@ input:focus {
     margin-left: 20px;
   }
 }
+
+@media all and (min-width: 1101px) {
+  .productdetails {
+    width: 58%;
+    height: 200px;
+    padding: 8px 15px 10px 11px;
+    margin-left: 20px;
+  }
+}

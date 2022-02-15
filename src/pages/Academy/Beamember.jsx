@@ -38,10 +38,24 @@ const [error, setError] = useState({
   useEffect(() => {
     setNavbar(0);
   }, [setNavbar]);
+  const isLandscape = window.innerHeight > window.innerWidth ? false : true;
   return (
-    <div>
+    <div style={{ maxHeight: window.innerHeight }}>
       <Academynavbar setMenu={setMenu} />
-      <div className="beamemberMain">
+      <div className='beamemberMain'>
+        <img
+          src={isLandscape ? bg1 : bg2}
+          style={{
+            height:
+              window.innerWidth < 800
+                ? window.innerHeight * 0.6 + 'px'
+                : window.innerHeight + 'px',
+            width:
+              window.innerWidth < 800
+                ? window.innerWidth + 'px'
+                : window.innerWidth * 0.77 + 'px',
+          }}
+        />
         <div>
           <span className="beamemberMainh3">Fill the form to be membership</span>
           <CustomInput className={error.name} onChange={(e) => {setValue({...value, name: e.target.value})}} value={value.name} label="Practioner's name" />
@@ -56,7 +70,7 @@ const [error, setError] = useState({
               setType("membership");
               storedata(value);
               setSingup(2);
-              history.replace(currUrl+"/login")
+              history.push(currUrl+"/login")
             // if(currUrl=="/club/beamember"){
             //   history.push("/club/login")
             // }
