@@ -54,11 +54,9 @@ input:focus {
   }
 
   .signbuttontext {
-    position: static;
+    /* position: static; */
     width: auto;
     height: 30px;
-    left: 8px;
-    top: 1px;
 
     /* bold/20 */
     font-family: Poppins;
@@ -140,8 +138,9 @@ input:focus {
     position: absolute;
     width: auto;
     height: 32px;
-    left: 120px;
-    top: 350px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
 
     /* Get Implant/Read */
     background: #000000;
@@ -693,7 +692,8 @@ input:focus {
     width: 85%;
     /* height: 419px; */
     left: 50%;
-    top: 30%;
+    /* top: 30%; */
+    bottom: 3%;
     transform: translate(-50%, 0);
     /* top: 376px; */
 
@@ -1061,8 +1061,9 @@ input:focus {
     position: absolute;
     width: auto;
     height: 32px;
-    left: 120px;
-    top: 600px;
+    /* bottom: 0; */
+    left: 50%;
+    transform: translateX(-50%);
 
     /* Get Implant/Read */
     background: #000000;
