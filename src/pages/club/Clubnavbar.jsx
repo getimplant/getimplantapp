@@ -33,7 +33,7 @@ export default function Clubnavbar({ scroll, setMenu, setProvider, navbar }) {
           style={{ textDecoration: 'none' }}
         >
           <span style={{ marginLeft: '50px', color: 'black' }}>
-            <b>Sign In</b>
+            <b>Login</b>
           </span>
         </NavLink>
 

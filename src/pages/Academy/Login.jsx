@@ -52,8 +52,8 @@ export default function Login({ setSingup, message, setMessage }) {
   const [resetemail, setResetEmail] = useState(false);
   const [isamember, setIsamember] = useState(0);
   const history = useHistory();
-  const location=useLocation();
-  const currUrl=location.pathname;
+  const location = useLocation();
+  const currUrl = location.pathname;
   const context = useContext(AuthContext);
   const userdata = context.value.userdata;
 
@@ -65,7 +65,6 @@ export default function Login({ setSingup, message, setMessage }) {
   };
   useEffect(() => {
     context.value.user && context.value.user.emailVerified && alreadyloggedin();
-    
   }, []);
   const validationSchema = yup.object({
     email: yup
@@ -99,28 +98,27 @@ export default function Login({ setSingup, message, setMessage }) {
     signInWithEmailAndPassword(auth, email, password)
       .then((cred) => {
         const userdata = readuserdata();
-        if( cred.user.emailVerified){
-        if(currUrl=="/club/login"){
-          window.open(
-            'https://get-implant.myshopify.com/collections/memberships'
-          )
-          window.location.replace("/")
-        }else if(currUrl=="/academy/login"){
-          window.open(
-            'https://get-implant.myshopify.com/collections/courses'
-          )
-          window.location.replace("/")
-        }else if(currUrl=="/store/login"){
-          window.open(
-            ' https://shops.getimplant.com/?_cd=f48f9ed0562bfdc6870a1f681e328fc767fd7736a2164155ba277b6371baaa1a&_uid=73640968364'
-          )
-          window.location.replace("/")
-        }else if(currUrl=="/fourm/login"){
-          window.open('https://www.facebook.com/groups/1495380457508792');
-          window.location.replace("/")
+        if (cred.user.emailVerified) {
+          if (currUrl == '/club/login') {
+            window.open(
+              'https://get-implant.myshopify.com/collections/memberships'
+            );
+            window.location.replace('/');
+          } else if (currUrl == '/academy/login') {
+            window.open(
+              'https://get-implant.myshopify.com/collections/courses'
+            );
+            window.location.replace('/');
+          } else if (currUrl == '/store/login') {
+            window.open(
+              ' https://shops.getimplant.com/?_cd=f48f9ed0562bfdc6870a1f681e328fc767fd7736a2164155ba277b6371baaa1a&_uid=73640968364'
+            );
+            window.location.replace('/');
+          } else if (currUrl == '/fourm/login') {
+            window.open('https://www.facebook.com/groups/1495380457508792');
+            window.location.replace('/');
+          }
         }
-
-       }
       })
       .catch((error) => {
         setMessage('');
@@ -195,7 +193,7 @@ export default function Login({ setSingup, message, setMessage }) {
             variant='contained'
             color='primary'
           >
-            <span className='loginbuttontext'>Sign In</span>
+            <span className='loginbuttontext'>Login</span>
           </button>
         </form>
         <a
@@ -228,7 +226,7 @@ export default function Login({ setSingup, message, setMessage }) {
         }}
       >
         <span className={classes.loginlinktext} style={{ fontSize: '12px' }}>
-          New here,create an account
+          Create an account
         </span>
       </a>
     </div>

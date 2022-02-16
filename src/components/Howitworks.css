@@ -42,7 +42,7 @@
     text-align: left !important;
     width: 85% !important;
     font-size: 1.4vh !important;
-    height: 4vh;
+    height: calc(4.4vh);
     overflow: hidden;
     transform: translateY(-4vh);
   }
