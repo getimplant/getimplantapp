@@ -12,6 +12,9 @@ import {
   Redirect,
 } from 'react-router-dom';
 import { useHistory } from 'react-router-dom';
+import { getAuth, signOut } from "firebase/auth";
+
+
 export default function Forprovider({ setProvider, setNavbar, navbar }) {
   let history = useHistory();
   const context = useContext(AuthContext);
@@ -43,6 +46,14 @@ export default function Forprovider({ setProvider, setNavbar, navbar }) {
       ? window.open('https://www.facebook.com/groups/1495380457508792')
       : history.push('/fourm/login');
     setProvider(0);
+  }
+  function handlelogout(){
+    const auth = getAuth();
+    signOut(auth).then(() => {
+      window.location.reload();
+    }).catch((error) => {
+      // An error happened.
+    });
   }
   return (
     <div className='providerMain'>
@@ -90,7 +101,7 @@ export default function Forprovider({ setProvider, setNavbar, navbar }) {
         </NavLink>
       </div>
       <div className='providerBars'>
-        <h4 className='logout'>Logout</h4>
+      {  uid?<h4 className='logout' onClick={()=>handlelogout()}>Logout</h4>:''}
         <NavLink
           style={{ textDecoration: 'none' }}
           onClick={() =>
