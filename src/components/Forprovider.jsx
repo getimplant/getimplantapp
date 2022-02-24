@@ -22,29 +22,35 @@ export default function Forprovider({ setProvider, setNavbar, navbar }) {
 
   function handleclickacademy() {
     // handleclickacademy();
-    uid
-      ? window.open('https://get-implant.myshopify.com/collections/courses')
-      : history.push('/academy/login');
+    // uid
+    //   ? window.open('https://get-implant.myshopify.com/collections/courses')
+    //   : history.push('/academy/login');
+    window.open('https://get-implant.myshopify.com/collections/courses')
     setProvider(0);
   }
   function handleclickclub() {
-    uid
-      ? window.open('https://get-implant.myshopify.com/collections/memberships')
-      : history.push('/club');
+    // uid
+    //   ? window.open('https://get-implant.myshopify.com/collections/memberships')
+    //   : history.push('/club');
+    window.open('https://get-implant.myshopify.com/collections/memberships')
     setProvider(0);
   }
   function handleclickshop() {
-    uid
-      ? window.open(
-          ' https://shops.getimplant.com/?_cd=f48f9ed0562bfdc6870a1f681e328fc767fd7736a2164155ba277b6371baaa1a&_uid=73640968364'
-        )
-      : history.push('/store/login');
+    // uid
+    //   ? window.open(
+    //       ' https://shops.getimplant.com/?_cd=f48f9ed0562bfdc6870a1f681e328fc767fd7736a2164155ba277b6371baaa1a&_uid=73640968364'
+    //     )
+    //   : history.push('/store/login');
+    window.open(
+      ' https://shops.getimplant.com/?_cd=f48f9ed0562bfdc6870a1f681e328fc767fd7736a2164155ba277b6371baaa1a&_uid=73640968364'
+    )
     setProvider(0);
   }
   function handleclickform() {
-    uid
-      ? window.open('https://www.facebook.com/groups/1495380457508792')
-      : history.push('/fourm/login');
+    // uid
+    //   ? window.open('https://www.facebook.com/groups/1495380457508792')
+    //   : history.push('/fourm/login');
+    window.open('https://www.facebook.com/groups/1495380457508792')
     setProvider(0);
   }
   function handlelogout(){

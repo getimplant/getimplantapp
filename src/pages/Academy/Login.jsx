@@ -11,7 +11,7 @@ import { Toast } from 'react-bootstrap';
 import './Academy.css';
 import { AuthContext } from './AuthProvider';
 import { Redirect, useHistory } from 'react-router';
-import { readuserdata } from './Usefirestore';
+import { readuserdata ,savedatatogsheet} from './Usefirestore';
 import { useLocation } from 'react-router-dom';
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -64,6 +64,7 @@ export default function Login({ setSingup, message, setMessage }) {
     }, 5000);
   };
   useEffect(() => {
+    
     context.value.user && context.value.user.emailVerified && alreadyloggedin();
   }, []);
   const validationSchema = yup.object({
