@@ -32,6 +32,7 @@ export default function Academy({ setNavbar, setMenu }) {
     singup ? (classname = "singuppage") : (classname = "academyMain");
   }
 
+  
   useEffect(() => {
     setNavbar(0);
   }, [setNavbar]);
