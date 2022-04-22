@@ -104,6 +104,10 @@
 .providerBars:nth-child(3):hover h2 {
   color: black;
 }
+.providerBars:nth-child(1):hover h2 {
+  color: black;
+}
+
 .providerBars:nth-child(4) {
   background-color: var(--blue-hex);
   animation-delay: var(--2nd-middle);

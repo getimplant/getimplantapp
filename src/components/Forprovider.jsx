@@ -25,14 +25,15 @@ export default function Forprovider({ setProvider, setNavbar, navbar }) {
     // uid
     //   ? window.open('https://get-implant.myshopify.com/collections/courses')
     //   : history.push('/academy/login');
-    window.open('https://get-implant.myshopify.com/collections/courses')
+    window.open('https://shops.getimplant.com/collections/ce-courses')
     setProvider(0);
   }
   function handleclickclub() {
     // uid
     //   ? window.open('https://get-implant.myshopify.com/collections/memberships')
     //   : history.push('/club');
-    window.open('https://get-implant.myshopify.com/collections/memberships')
+    // window.open('https://get-implant.myshopify.com/collections/memberships')
+    window.open('https://getimplant.simplybook.me/v2/#')
     setProvider(0);
   }
   function handleclickshop() {
@@ -75,7 +76,8 @@ export default function Forprovider({ setProvider, setNavbar, navbar }) {
           style={{ textDecoration: 'none' }}
           // onClick={handleclickclub}
         >
-          <h2>Membership</h2>
+          {/* <h2>Membership</h2> */}
+          <h2>Schedule </h2>
         </Link>
       </div>
       <div className='providerBars'>
