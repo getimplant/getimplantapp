@@ -15,6 +15,7 @@ import { useHistory } from 'react-router-dom';
 import { getAuth, signOut } from "firebase/auth";
 
 
+
 export default function Forprovider({ setProvider, setNavbar, navbar }) {
   let history = useHistory();
   const context = useContext(AuthContext);
