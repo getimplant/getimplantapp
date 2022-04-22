@@ -48,7 +48,7 @@ export default function Home({ setModal, setMenu }) {
         </div>
         <div>
           <h1>
-            The <span>GET</span> IMPLANT story
+            The <span>GET</span> IMPLANT Story
           </h1>
           <div className='implantMobile'>
             <div>
