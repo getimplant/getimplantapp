@@ -25,7 +25,7 @@ export default function Forprovider({ setProvider, setNavbar, navbar }) {
     // uid
     //   ? window.open('https://get-implant.myshopify.com/collections/courses')
     //   : history.push('/academy/login');
-    window.open('https://shops.getimplant.com/collections/ce-courses')
+    window.open('https://shops.getimplant.com/collections/courses')
     setProvider(0);
   }
   function handleclickclub() {
@@ -98,12 +98,12 @@ export default function Forprovider({ setProvider, setNavbar, navbar }) {
         <NavLink
           // href='/marketing'
           style={{ textDecoration: 'none' }}
-          onClick={() => alert('Coming soon...')}
-          // onClick={() =>
-          //   window.open(
-          //     'https://shops.getimplant.com/?_cd=f48f9ed0562bfdc6870a1f681e328fc767fd7736a2164155ba277b6371baaa1a&_uid=73640968364&preview_theme_id='
-          //   )
-          // }
+          // onClick={() => alert('Coming soon...')}
+          onClick={() =>
+            window.open(
+              'https://shops.getimplant.com/pages/contact-us'
+            )
+          }
         >
           <h2>Marketing</h2>
         </NavLink>

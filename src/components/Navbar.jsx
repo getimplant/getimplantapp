@@ -77,7 +77,7 @@ export default function Navbar({ scroll, setMenu, setProvider, navbar }) {
           style={{ textDecoration: 'none' }}
           onClick={() => setProvider(true)}
         >
-          <span>For Providers</span>
+          <span>For Dentists</span>
         </NavLink>
       </div>
       <div>

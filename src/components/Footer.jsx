@@ -115,7 +115,7 @@ export default function Footer({ setProvider }) {
             onClick={() => setProvider(true)}
             style={{ textDecoration: "none" }}
           >
-            For Providers
+            For Dentists
           </NavLink>
         </div>
         <div>
